@@ -1,0 +1,90 @@
+.subHomeContainer{
+  outline: white dashed 1px;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 600;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+p{
+  margin: 0;
+}
+
+.text{
+  margin: 0;
+  outline: white dashed 1px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 4rem;
+}
+
+span{
+  color: rgb(255, 0, 0);
+  height: 2rem;
+}
+
+.textContainer1{
+  outline: white dashed 1px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 21rem;
+  position: relative;
+}
+
+.subTextContainer{
+  outline: white dashed 1px;
+  font-weight: bold;
+  font-size: 2.7rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.textColor1{
+  background: linear-gradient(white, rgb(141, 140, 140) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 3rem;
+}
+
+.textColor2{
+  background: linear-gradient(rgb(141, 140, 140), rgb(88, 88, 88) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 3rem;
+}
+
+.textColor3{
+  background: linear-gradient(rgb(88, 88, 88), rgb(3, 3, 3) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 3rem;
+}
+
+.imageContainer{
+  outline: white dashed 1px;
+  width: 100%;
+  top: 1rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moon{
+  height: 20rem;
+  outline: white dashed 1px;
+  width: 100%;
+}
