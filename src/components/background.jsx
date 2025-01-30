@@ -1,5 +1,6 @@
-import "../style/loading.css";
+import "../style/background.css";
 import "../style/hero.css";
+import Rocket from "../assets/spaceship.svg";
 
 export default function background() {
   return (
@@ -13,6 +14,12 @@ export default function background() {
           <div className="star1">
 
           </div>
+        </div>
+      ))}
+
+      {Array.from({ length: 4 }).map((_, index) => (
+        <div key={index} className="shootingStar1" style={{ top: `${Math.random() * 100}%`, left: `${Math.random() * 100}%`, animationDuration: `${Math.random() * 10 + 5}s`, }}>
+          <img className="rocket" src={Rocket} alt="" />
         </div>
       ))}
     </div>

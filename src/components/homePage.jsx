@@ -1,6 +1,6 @@
 import "../style/homePage.css";
 import Moon from "../assets/moon.svg";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Home() {
   const words = ["Khriz", "Front-End Developer", "UI/UX Designer"];
@@ -9,14 +9,36 @@ export default function Home() {
   const [isDeleting, setIsDeleting] = useState(false);
   const typingSpeed = isDeleting ? 50 : 100;
 
+  const sectionRef = useRef(null); 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.5 } 
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   useEffect(() => {
     const currentWord = words[currentWordIndex];
 
     if (!isDeleting && displayedText === currentWord) {
-      setTimeout(() => setIsDeleting(true), 1500); 
+      setTimeout(() => setIsDeleting(true), 1500);
     } else if (isDeleting && displayedText === "") {
       setIsDeleting(false);
-      setCurrentWordIndex((prev) => (prev + 1) % words.length); 
+      setCurrentWordIndex((prev) => (prev + 1) % words.length);
     }
 
     const timer = setTimeout(() => {
@@ -29,7 +51,7 @@ export default function Home() {
   }, [displayedText, isDeleting, currentWordIndex]);
 
   return (
-    <div className="subHomeContainer">
+    <div ref={sectionRef} className={`subHomeContainer ${isVisible ? "visible" : "hidden"}`}>
       <p className="text">
         Hi, I'm <span className="typingText">{displayedText}</span>
       </p>
