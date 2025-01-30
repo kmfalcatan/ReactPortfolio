@@ -3,6 +3,8 @@ import "../style/hero.css";
 import Header from "./header";
 import Background from "./background";
 import Home from "./homePage";
+import About from "./aboutPage";
+import Skill from "./skillPage";
 
 export default function hero() {
   return (
@@ -15,7 +17,11 @@ export default function hero() {
       </div>
 
       <div id="about" className="aboutContainer">
+        <About/>
+      </div>
 
+      <div id="skill" className="skillContainer">
+        <Skill/>
       </div>
     </div>
   );
