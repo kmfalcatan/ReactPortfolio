@@ -1,5 +1,12 @@
 import "../style/skillPage.css";
 import Html from "../assets/html.svg"
+import Css from "../assets/css.svg"
+import Js from "../assets/js.svg"
+import React from "../assets/react.svg"
+import Tailwind from "../assets/tailwind.svg"
+import Figma from "../assets/figma.svg"
+import Canva from "../assets/canva.svg"
+import VsCode from "../assets/vsCode.svg"
 import { useState, useEffect, useRef } from "react";
 
 export default function Skill() {
@@ -54,7 +61,7 @@ export default function Skill() {
         
         <div className="logoTitleContainer">
           <div className="subLogoContainer">
-            <img src="" alt="" />
+          <img className="logo" src={Css} alt="" />
           </div>
 
           <div className="textContainer4">
@@ -65,7 +72,7 @@ export default function Skill() {
         
         <div className="logoTitleContainer">
           <div className="subLogoContainer">
-            <img src="" alt="" />
+          <img className="logo" src={Js} alt="" />
           </div>
 
           <div className="textContainer4">
@@ -76,7 +83,7 @@ export default function Skill() {
         
         <div className="logoTitleContainer">
           <div className="subLogoContainer">
-            <img src="" alt="" />
+          <img className="logo" src={React} alt="" />
           </div>
 
           <div className="textContainer4">
@@ -87,7 +94,7 @@ export default function Skill() {
         
         <div className="logoTitleContainer">
           <div className="subLogoContainer">
-            <img src="" alt="" />
+          <img className="logo" src={Tailwind} alt="" />
           </div>
 
           <div className="textContainer4">
@@ -98,7 +105,7 @@ export default function Skill() {
         
         <div className="logoTitleContainer">
           <div className="subLogoContainer">
-            <img src="" alt="" />
+          <img className="logo" src={Figma} alt="" />
           </div>
 
           <div className="textContainer4">
@@ -109,7 +116,7 @@ export default function Skill() {
         
         <div className="logoTitleContainer">
           <div className="subLogoContainer">
-            <img src="" alt="" />
+          <img className="logo" src={Canva} alt="" />
           </div>
 
           <div className="textContainer4">
@@ -120,7 +127,7 @@ export default function Skill() {
         
         <div className="logoTitleContainer">
           <div className="subLogoContainer">
-            <img src="" alt="" />
+          <img className="logo" src={VsCode} alt="" />
           </div>
 
           <div className="textContainer4">
@@ -156,73 +163,73 @@ export default function Skill() {
 
             <div className="subPercentContainer">
               <div className="iconContainer">
-                <img className="icon" src={Html} alt="" />
+                <img className="icon" src={Css} alt="" />
               </div>
 
               <div className="percent">
                 <div className="subPercent">
-                  <div className="circleContainer">
+                  <div className="circleContainer2">
 
                   </div>
                 </div>
               </div>
               
               <div className="iconContainer">
-                <p>70%</p>
+                <p>60%</p>
               </div>
             </div>
 
             <div className="subPercentContainer">
               <div className="iconContainer">
-                <img className="icon" src={Html} alt="" />
+                <img className="icon" src={Js} alt="" />
               </div>
 
               <div className="percent">
                 <div className="subPercent">
-                  <div className="circleContainer">
+                  <div className="circleContainer3">
 
                   </div>
                 </div>
               </div>
               
               <div className="iconContainer">
-                <p>70%</p>
+                <p>40%</p>
               </div>
             </div>
 
             <div className="subPercentContainer">
               <div className="iconContainer">
-                <img className="icon" src={Html} alt="" />
+                <img className="icon" src={React} alt="" />
               </div>
 
               <div className="percent">
                 <div className="subPercent">
-                  <div className="circleContainer">
+                  <div className="circleContainer4">
 
                   </div>
                 </div>
               </div>
               
               <div className="iconContainer">
-                <p>70%</p>
+                <p>10%</p>
               </div>
             </div>
 
             <div className="subPercentContainer">
               <div className="iconContainer">
-                <img className="icon" src={Html} alt="" />
+                <img className="icon" src={Tailwind} alt="" />
               </div>
 
               <div className="percent">
                 <div className="subPercent">
-                  <div className="circleContainer">
+                  <div className="circleContainer5">
 
                   </div>
                 </div>
               </div>
               
               <div className="iconContainer">
-                <p>70%</p>
+                <p>50%</p>
               </div>
             </div>
           </div>
@@ -236,12 +243,12 @@ export default function Skill() {
 
             <div className="subPercentContainer">
               <div className="iconContainer">
-                <img className="icon" src={Html} alt="" />
+                <img className="icon" src={VsCode} alt="" />
               </div>
 
               <div className="percent">
                 <div className="subPercent">
-                  <div className="circleContainer">
+                  <div className="circleContainer6">
 
                   </div>
                 </div>
@@ -255,42 +262,42 @@ export default function Skill() {
 
           <div className="subToolContainer1">
             <div className="subDevContainer">
-              <p>Front-End Developer</p>
+              <p>UI/UX Design Tools</p>
             </div>
 
             <div className="subPercentContainer">
               <div className="iconContainer">
-                <img className="icon" src={Html} alt="" />
+                <img className="icon" src={Figma} alt="" />
               </div>
 
               <div className="percent">
                 <div className="subPercent">
-                  <div className="circleContainer">
+                  <div className="circleContainer7">
 
                   </div>
                 </div>
               </div>
               
               <div className="iconContainer">
-                <p>70%</p>
+                <p>80%</p>
               </div>
             </div>
 
             <div className="subPercentContainer">
               <div className="iconContainer">
-                <img className="icon" src={Html} alt="" />
+                <img className="icon" src={Canva} alt="" />
               </div>
 
               <div className="percent">
                 <div className="subPercent">
-                  <div className="circleContainer">
+                  <div className="circleContainer8">
 
                   </div>
                 </div>
               </div>
               
               <div className="iconContainer">
-                <p>70%</p>
+                <p>90%</p>
               </div>
             </div>
           </div>
