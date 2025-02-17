@@ -91,6 +91,207 @@ export default function Project() {
           </div>
         </div>
 
+
+        <div className="subProject">
+          <div className="projectPictureContainer">
+            <img className="projectPicture" src={Forest} alt="" />
+          </div>
+
+          <div className="projectNameContainer">
+            <p>Project name</p>
+          </div>
+
+          <div className="projectDescriptionContainer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis delectus optio</p>
+          </div>
+
+          <div className="viewButtonContainer">
+            <a href="">
+              <img className="icon" src={Eye} alt="" /> 
+            </a>
+            
+            <a href="">
+              <img className="icon" src={GitHub} alt="" />
+            </a>
+          </div>
+        </div>
+
+
+        <div className="subProject">
+          <div className="projectPictureContainer">
+            <img className="projectPicture" src={Forest} alt="" />
+          </div>
+
+          <div className="projectNameContainer">
+            <p>Project name</p>
+          </div>
+
+          <div className="projectDescriptionContainer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis delectus optio</p>
+          </div>
+
+          <div className="viewButtonContainer">
+            <a href="">
+              <img className="icon" src={Eye} alt="" /> 
+            </a>
+            
+            <a href="">
+              <img className="icon" src={GitHub} alt="" />
+            </a>
+          </div>
+        </div>
+
+
+
+        <div className="subProject">
+          <div className="projectPictureContainer">
+            <img className="projectPicture" src={Forest} alt="" />
+          </div>
+
+          <div className="projectNameContainer">
+            <p>Project name</p>
+          </div>
+
+          <div className="projectDescriptionContainer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis delectus optio</p>
+          </div>
+
+          <div className="viewButtonContainer">
+            <a href="">
+              <img className="icon" src={Eye} alt="" /> 
+            </a>
+            
+            <a href="">
+              <img className="icon" src={GitHub} alt="" />
+            </a>
+          </div>
+        </div>
+
+
+        <div className="subProject">
+          <div className="projectPictureContainer">
+            <img className="projectPicture" src={Forest} alt="" />
+          </div>
+
+          <div className="projectNameContainer">
+            <p>Project name</p>
+          </div>
+
+          <div className="projectDescriptionContainer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis delectus optio</p>
+          </div>
+
+          <div className="viewButtonContainer">
+            <a href="">
+              <img className="icon" src={Eye} alt="" /> 
+            </a>
+            
+            <a href="">
+              <img className="icon" src={GitHub} alt="" />
+            </a>
+          </div>
+        </div>
+
+
+        <div className="subProject">
+          <div className="projectPictureContainer">
+            <img className="projectPicture" src={Forest} alt="" />
+          </div>
+
+          <div className="projectNameContainer">
+            <p>Project name</p>
+          </div>
+
+          <div className="projectDescriptionContainer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis delectus optio</p>
+          </div>
+
+          <div className="viewButtonContainer">
+            <a href="">
+              <img className="icon" src={Eye} alt="" /> 
+            </a>
+            
+            <a href="">
+              <img className="icon" src={GitHub} alt="" />
+            </a>
+          </div>
+        </div>
+
+
+        <div className="subProject">
+          <div className="projectPictureContainer">
+            <img className="projectPicture" src={Forest} alt="" />
+          </div>
+
+          <div className="projectNameContainer">
+            <p>Project name</p>
+          </div>
+
+          <div className="projectDescriptionContainer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis delectus optio</p>
+          </div>
+
+          <div className="viewButtonContainer">
+            <a href="">
+              <img className="icon" src={Eye} alt="" /> 
+            </a>
+            
+            <a href="">
+              <img className="icon" src={GitHub} alt="" />
+            </a>
+          </div>
+        </div>
+
+
+        <div className="subProject">
+          <div className="projectPictureContainer">
+            <img className="projectPicture" src={Forest} alt="" />
+          </div>
+
+          <div className="projectNameContainer">
+            <p>Project name</p>
+          </div>
+
+          <div className="projectDescriptionContainer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis delectus optio</p>
+          </div>
+
+          <div className="viewButtonContainer">
+            <a href="">
+              <img className="icon" src={Eye} alt="" /> 
+            </a>
+            
+            <a href="">
+              <img className="icon" src={GitHub} alt="" />
+            </a>
+          </div>
+        </div>
+
+
+        <div className="subProject">
+          <div className="projectPictureContainer">
+            <img className="projectPicture" src={Forest} alt="" />
+          </div>
+
+          <div className="projectNameContainer">
+            <p>Project name</p>
+          </div>
+
+          <div className="projectDescriptionContainer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis delectus optio</p>
+          </div>
+
+          <div className="viewButtonContainer">
+            <a href="">
+              <img className="icon" src={Eye} alt="" /> 
+            </a>
+            
+            <a href="">
+              <img className="icon" src={GitHub} alt="" />
+            </a>
+          </div>
+        </div>
+
         <div className="subProject">
           <div className="projectPictureContainer">
             <img className="projectPicture" src={Forest} alt="" />

@@ -6,6 +6,7 @@ import Home from "./homePage";
 import About from "./aboutPage";
 import Skill from "./skillPage";
 import Project from "./project";
+import Contact from "./contact";
 
 export default function hero() {
   return (
@@ -27,6 +28,10 @@ export default function hero() {
 
       <div id="project" className="projectContainer">
         <Project/>
+      </div>
+
+      <div id="contact" className="contactContainer">
+        <Contact/>
       </div>
     </div>
   );
