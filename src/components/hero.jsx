@@ -5,6 +5,7 @@ import Background from "./background";
 import Home from "./homePage";
 import About from "./aboutPage";
 import Skill from "./skillPage";
+import Project from "./project";
 
 export default function hero() {
   return (
@@ -22,6 +23,10 @@ export default function hero() {
 
       <div id="skill" className="skillContainer">
         <Skill/>
+      </div>
+
+      <div id="project" className="projectContainer">
+        <Project/>
       </div>
     </div>
   );
