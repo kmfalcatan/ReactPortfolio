@@ -1,0 +1,133 @@
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.subProjectContainer{
+  height: 100vh;
+  background-color: black;
+  width: 100vw;
+}
+
+.titleContainer2 {
+  margin-top: 3.6rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  color: white;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.text2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.text3 {
+  font-size: 1.2rem;
+}
+
+.project{
+  outline: red dashed 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.subProject{
+  outline: red dashed 1px;
+  position: relative;
+  height: 20rem;
+  width: 17rem;
+  border: solid white 1px;
+  background-color: rgba(255, 255, 255, 0.171);
+}
+
+.projectPictureContainer{
+  outline: red dashed 1px;
+  height: 10rem;
+  background-color: rgb(217 217 217);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectPicture{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.projectNameContainer{
+  outline: red dashed 1px;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.projectDescriptionContainer{
+  outline: red dashed 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.viewButtonContainer{
+  position: absolute;
+  bottom: 0;
+  outline: red dashed 1px;
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.icon{
+  height: 90%;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.icon:hover{
+  filter: invert(1);
+}
+
+
+/*pc*/
+@media only screen and (min-width: 1441px) {
+
+  .titleContainer2 {
+    grid-template-columns: repeat(2, 35rem);
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .text3 {
+    text-align: right;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .text2 {
+    text-align: left;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+  }
+}
