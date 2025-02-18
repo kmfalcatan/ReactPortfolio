@@ -47,7 +47,7 @@ export default function About() {
             </div>
             
             <div className="subTextContainer3">
-              <p>Hi, I am Khriz Marr L. Falcatan, a 3rd year student from Western Mindanao State University and a web designer.</p>
+              <p>Hi, I am Khriz Marr L. Falcatan, a third year student from Western Mindanao State University and a web designer.</p>
               <button className="button1" onClick={() => scrollToSection("home")}>Contact Me</button>
             </div>
           </div>
