@@ -1,4 +1,4 @@
-import Hero from "./components/hero";
+import Hero from "./components/body";
 import Loading from "./components/loadingScreen";
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
