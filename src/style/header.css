@@ -7,10 +7,11 @@
   border: none;
   cursor: pointer;
   transition: all 0.15s;
+  font-family: 'Space Odyssey', sans-serif;
 }
 
 p{
-  font-family: "Roboto", serif;
+  font-family: 'Space Odyssey', sans-serif;
 }
 
 .button:hover{

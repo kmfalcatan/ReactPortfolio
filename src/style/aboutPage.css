@@ -11,7 +11,7 @@
 }
 
 p{
-  font-family: "Roboto", serif;
+  font-family: 'Space Odyssey', sans-serif;
 }
 
 .subAboutContainer{
@@ -92,7 +92,7 @@ p{
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.74);
   cursor: pointer;
   transition: all 0.15s;
-  font-size: 1.2rem;
+  font-size: 1.2rem;font-family: 'Space Odyssey', sans-serif;
 }
 
 .button1:hover{
