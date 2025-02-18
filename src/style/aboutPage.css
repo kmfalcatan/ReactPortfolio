@@ -10,6 +10,10 @@
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
+p{
+  font-family: "Roboto", serif;
+}
+
 .subAboutContainer{
   position: absolute;
   height: 100%;
@@ -54,7 +58,8 @@
 
 .subTextContainer3{
   color: white;
-  min-height: 70%;
+  min-height: 60%;
+  text-align: center;
   width: 70%;
   border-radius: 1rem;
   border: solid white 1px;
@@ -81,12 +86,13 @@
 .button1{
   background-color: white;
   height: 2.5rem;
-  width: 6rem;
+  width: 8rem;
   border: none;
   border-radius: 0.5rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.74);
   cursor: pointer;
   transition: all 0.15s;
+  font-size: 1.2rem;
 }
 
 .button1:hover{

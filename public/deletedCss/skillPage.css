@@ -4,6 +4,10 @@
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
+p{
+  font-family: "Roboto", serif;
+}
+
 .titleContainer2 {
   margin-top: 3.6rem;
   display: grid;
