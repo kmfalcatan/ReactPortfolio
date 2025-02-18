@@ -6,6 +6,10 @@
   opacity: 1;
 }
 
+p{
+  font-family: "Roboto", serif;
+}
+
 .subProjectContainer{
   background-color: black;
   width: 100vw;
