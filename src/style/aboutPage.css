@@ -11,7 +11,6 @@
 }
 
 .subAboutContainer{
-  outline: red dashed 1px;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -30,13 +29,11 @@
 }
 
 .aboutMeContainer{
-  outline: red dashed 1px;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
 }
 
 .subAboutMeContainer{
-  outline: red dashed 1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +45,6 @@
 }
 
 .textContainer3{
-  outline: red dashed 1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,7 +53,6 @@
 }
 
 .subTextContainer3{
-  outline: red dashed 1px;
   color: white;
   min-height: 70%;
   width: 70%;

@@ -17,7 +17,6 @@ p{
 
 .text{
   margin: 0;
-  outline: white dashed 1px;
   width: 100%;
   font-weight: 600;
   display: flex;
@@ -36,7 +35,6 @@ span{
 }
 
 .textContainer1{
-  outline: white dashed 1px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -45,7 +43,6 @@ span{
 }
 
 .subTextContainer{
-  outline: white dashed 1px;
   font-weight: bold;
   font-size: 2.7rem;
   display: flex;
@@ -86,7 +83,6 @@ span{
 }
 
 .imageContainer{
-  outline: white dashed 1px;
   width: 100%;
   top: 1rem;
   position: absolute;
@@ -97,7 +93,6 @@ span{
 
 .moon{
   height: 20rem;
-  outline: white dashed 1px;
   width: 100%;
   opacity: 0;
   animation: popup 0.5s ease-in forwards;
