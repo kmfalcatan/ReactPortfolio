@@ -44,6 +44,96 @@ p{
   animation: fadein 1s linear;
 }
 
+.subHeaderContainer1{
+  display: none;
+}
+
+.mobileHeaderContainer{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  animation: fadein 1s linear;
+}
+
+.subMobileHeaderContainer{
+  height: 3.5;
+}
+
+.menubarContainer{
+  padding-top: 2px;
+  width: 3.125rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.line{
+  border: solid 0.125rem;
+  width: 1.563rem;
+  margin-bottom: 0.313rem;
+  margin-top: 0.5rem;
+  margin-left: 0.563rem;
+  border-color: white;
+}
+
+.hidden{
+  display: none;
+}
+
+.change .line:nth-child(1) {
+  transform: rotate(-45deg) translate(-9px, 0.625rem);
+}
+
+.change .line:nth-child(2) {
+  opacity: 0;
+}
+
+.change .line:nth-child(3) {
+  transform: rotate(45deg) translate(-0.438rem, -0.5rem);
+}
+
+.subMenubarContainer{
+  background-color: rgb(10, 10, 10);
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  animation: navbar 1s linear;
+}
+
+.fadeIn{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  animation: navbar 1s linear;
+}
+
+.button2{
+  height: 2.5rem;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-size: 1.2rem;
+  font-family: 'Space Odyssey', sans-serif;
+  background-color: transparent;
+  color: white;
+  animation: fadein 1s linear;
+}
+
+.button2:hover{
+  background-color: white;
+  color: black;
+}
+
+.button2:active{
+  background-color: transparent;
+  color: white;
+  box-shadow: none;
+}
+
 @keyframes fadein {
   from{
     opacity: 0;
@@ -57,5 +147,13 @@ p{
   .button{
     font-size: 1.2rem;
     width: 6rem;
+  }
+
+  .mobileHeaderContainer{
+    display: none;
+  }
+
+  .subHeaderContainer1{
+    display: flex;
   }
 }
