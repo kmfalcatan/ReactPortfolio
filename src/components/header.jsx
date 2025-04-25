@@ -35,11 +35,13 @@ export default function Header() {
   return (
     <div className="headerContainer">
       <div className="subHeaderContainer1">
-        <button onClick={() => scrollToSection("home")} className="button">Home</button>
-        <button onClick={() => scrollToSection("about")} className="button">About</button>
-        <button onClick={() => scrollToSection("skill")} className="button">Skills</button>
-        <button onClick={() => scrollToSection("project")} className="button">Project</button>
-        <button onClick={() => scrollToSection("contact")} className="button">Contact</button>
+        <button onClick={() => scrollToSection("home")} className="button textStyle">Home</button>
+        <button onClick={() => scrollToSection("about")} className="button textStyle">About</button>
+        <button onClick={() => scrollToSection("skill")} className="button textStyle">Skills</button>
+        <button onClick={() => scrollToSection("project")} className="button textStyle">Project</button>
+        <button onClick={() => scrollToSection("blog")} className="button textStyle">Blog Post</button>
+        <button onClick={() => scrollToSection("experience")} className="button textStyle">Experience</button>
+        <button onClick={() => scrollToSection("contact")} className="button textStyle">Contact</button>
       </div>
 
       <div className="mobileHeaderContainer">
@@ -54,11 +56,13 @@ export default function Header() {
           </div>
 
           <div className={`subMenubarContainer ${menuOpen ? "fadeIn" : ""}`} >
-            <button onClick={() => scrollToSection("home")} className="button2">Home</button>
-            <button onClick={() => scrollToSection("about")} className="button2">About</button>
-            <button onClick={() => scrollToSection("skill")} className="button2">Skills</button>
-            <button onClick={() => scrollToSection("project")} className="button2">Project</button>
-            <button onClick={() => scrollToSection("contact")} className="button2">Contact</button>
+            <button onClick={() => scrollToSection("home")} className="button2 textStyle">Home</button>
+            <button onClick={() => scrollToSection("about")} className="button2 textStyle">About</button>
+            <button onClick={() => scrollToSection("skill")} className="button2 textStyle">Skills</button>
+            <button onClick={() => scrollToSection("project")} className="button2 textStyle">Project</button>
+            <button onClick={() => scrollToSection("blog")} className="button2 textStyle">Blog Post</button>
+            <button onClick={() => scrollToSection("experience")} className="button2 textStyle">Experience</button>
+            <button onClick={() => scrollToSection("contact")} className="button2 textStyle">Contact</button>
           </div>
         </div>
       </div>

@@ -6,12 +6,16 @@
   opacity: 1;
 }
 
-p{
-  font-family: "Roboto", serif;
+.dateContainer{
+  padding-left: 0.5rem 0.5rem 0.5rem 0;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  height: 1.5rem;
+  color: rgba(255, 255, 255, 0.596);
 }
 
 .subProjectContainer{
-  background-color: black;
   width: 100vw;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
@@ -37,7 +41,6 @@ p{
 }
 
 .project{
-  outline: red dashed 1px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -46,30 +49,38 @@ p{
 }
 
 .subProject{
-  outline: red dashed 1px;
   position: relative;
-  height: 20rem;
+  height: 17rem;
+  border-radius: 1rem;
   width: 17rem;
   border: solid white 1px;
   background-color: rgba(255, 255, 255, 0.171);
+  transition: all 0.15s;
+}
+
+.subProject:hover{
+  transform: scale(1.05);
+}
+
+.subProject:active{
+  transform: scale(1);
 }
 
 .projectPictureContainer{
-  outline: red dashed 1px;
-  height: 10rem;
   background-color: rgb(217 217 217);
   display: flex;
   justify-content: center;
+  border-radius: 1rem 1rem 0 0;
   align-items: center;
 }
 
 .projectPicture{
   max-height: 100%;
   max-width: 100%;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .projectNameContainer{
-  outline: red dashed 1px;
   margin-top: 0.5rem;
   display: flex;
   align-items: center;
@@ -80,20 +91,17 @@ p{
 }
 
 .projectDescriptionContainer{
-  outline: red dashed 1px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   color: white;
-  text-align: center;
+  padding-left: 0.5rem;
   margin-top: 0.5rem;
 }
 
 .viewButtonContainer{
   position: absolute;
   bottom: 0;
-  outline: red dashed 1px;
-  height: 2rem;
   width: 100%;
   display: flex;
   justify-content: center;

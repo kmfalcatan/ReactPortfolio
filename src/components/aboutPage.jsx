@@ -43,12 +43,14 @@ export default function About() {
 
           <div className="textContainer3">
             <div className="titleContainer">
-              <p>About me</p>
+              <p className="textStyle">About me</p>
             </div>
             
             <div className="subTextContainer3">
-              <p>Hi, I am Khriz Marr L. Falcatan, a third year student from Western Mindanao State University and a web designer.</p>
-              <button className="button1" onClick={() => scrollToSection("home")}>Contact Me</button>
+              <div className="subTextContainer8">
+              <p className="textStyle">Hi, I’m Khriz Marr L. Falcatan, a Forth-year student at Western Mindanao State University, currently pursuing a Bachelor of Science in Information Technology. I have a strong passion for front-end development, where I focus on creating visually appealing and user-friendly web interfaces. My interests lie in crafting responsive and interactive designs using modern technologies like HTML, CSS, JavaScript, and frameworks such as React. I enjoy solving UI/UX challenges and ensuring that web applications provide a seamless experience across different devices and browsers. As I continue to develop my skills, I am eager to learn more about emerging trends in front-end development and how I can apply them to real-world projects.</p>
+              <button className="button1 textStyle" onClick={() => scrollToSection("home")}>Contact Me</button>
+              </div>
             </div>
           </div>
         </div>
