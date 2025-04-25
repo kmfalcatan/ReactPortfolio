@@ -37,10 +37,10 @@ export default function Contact() {
       }, []);
   
   return(
-    <div ref={sectionRef} className={`subContactContainer ${isVisible ? "visible" : "hidden"}`}>
+    <div ref={sectionRef} className="subContactContainer">
       <div className="titleContainer2">
-        <p className="text2">Contact Me Anythime!</p>
-        <p className="text3">Feel free to reach out for collaborations, inquiries, or just to say hello!</p>
+        <p className="text2 textStyle">Contact Me Anythime!</p>
+        <p className="text3 textStyle">Feel free to reach out for collaborations, inquiries, or just to say hello!</p>
       </div>
 
       <div className="contact">
@@ -52,16 +52,16 @@ export default function Contact() {
           </div>
 
           <div className="socialName">
-            <p>Chat now</p>
+            <p className="textStyle">Chat now</p>
           </div>
 
           <div className="messageContainer">
-            <p>Chat me on Instagram</p>
+            <p className="textStyle">Chat me on Instagram</p>
           </div>
 
           <div className="messageButtonContainer">
             <a href="">
-              <button className="messageButton">Start chat <img className="arrow" src={Arrow} alt="" /></button>
+              <button className="messageButton textStyle">Start chat <img className="arrow" src={Arrow} alt="" /></button>
             </a>
           </div>
         </div>
@@ -74,11 +74,11 @@ export default function Contact() {
           </div>
 
           <div className="socialName">
-            <p>Email me</p>
+            <p className="textStyle">Email me</p>
           </div>
 
           <div className="messageContainer">
-            <p>Email me from you app</p>
+            <p className="textStyle">Email me from you app</p>
           </div>
 
           <div className="messageButtonContainer">
@@ -94,11 +94,11 @@ export default function Contact() {
           </div>
 
           <div className="socialName">
-            <p>Text me</p>
+            <p className="textStyle">Text me</p>
           </div>
 
           <div className="messageContainer">
-            <p>Text me from your phone</p>
+            <p className="textStyle">Text me from your phone</p>
           </div>
 
           <div className="messageButtonContainer">

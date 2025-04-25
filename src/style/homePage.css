@@ -18,6 +18,7 @@ p{
 
 .text{
   margin: 0;
+  font-family: 'Space Odyssey', sans-serif;
   width: 100%;
   font-weight: 600;
   display: flex;
@@ -33,6 +34,7 @@ p{
 span{
   color: rgb(255, 0, 0);
   height: 2rem;
+  font-family: 'Space Odyssey', sans-serif;
 }
 
 .textContainer1{
@@ -59,11 +61,13 @@ span{
   -webkit-text-fill-color: transparent;
   height: 3rem;
   opacity: 0;
+  font-family: 'Space Odyssey', sans-serif;
   animation: popup 0.5s ease-in forwards;
   animation-delay: 1s;
 }
 
 .textColor2{
+  font-family: 'Space Odyssey', sans-serif;
   background: linear-gradient(rgba(141, 140, 140, 0.466), rgba(88, 88, 88, 0.466) );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -76,6 +80,7 @@ span{
 .textColor3{
   background: linear-gradient(rgba(88, 88, 88, 0.26), rgba(3, 3, 3, 0.26) );
   -webkit-background-clip: text;
+  font-family: 'Space Odyssey', sans-serif;
   -webkit-text-fill-color: transparent;
   height: 3rem;
   opacity: 0;

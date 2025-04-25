@@ -1,11 +1,6 @@
 .subSkillContainer {
   width: 100vw;
-  background-color: black;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
-p{
-  font-family: "Roboto", serif;
 }
 
 .titleContainer2 {
