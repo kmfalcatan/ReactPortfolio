@@ -2,7 +2,7 @@ import "../style/project.css";
 import { useState, useEffect, useRef } from "react";
 import Eye from "../assets/eye.svg"
 import GitHub from "../assets/logo-github.svg"
-import WmsuCourse from "../assets/wmsuCourse.jpg"
+import WmsuCourse from "../assets/WmsuCourse.jpg"
 import TodoList from "../assets/todoList.jpg"
 import Pokemon from "../assets/pokemon.jpg"
 

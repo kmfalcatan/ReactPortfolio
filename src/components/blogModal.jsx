@@ -1,5 +1,4 @@
 import "../style/blogModal.css";
-import WmsuCourse from "../assets/WmsuCourse.jpg";
 import Day1 from "../assets/day1.jpg";
 import Back from "../assets/back.svg";
 import Next from "../assets/next.svg";
