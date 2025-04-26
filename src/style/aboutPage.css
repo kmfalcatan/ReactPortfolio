@@ -87,7 +87,7 @@ p, .textStyle{
 }
 
 .button1{
-  background-color: white;
+  background-color: #45a29e;
   height: 2.5rem;
   width: 8rem;
   border: none;
@@ -99,9 +99,7 @@ p, .textStyle{
 }
 
 .button1:hover{
-  background-color: transparent;
-  border: solid white 1px;
-  color: white;
+  background-color: #5df2e9;
   transform: scale(1.1);
 }
 

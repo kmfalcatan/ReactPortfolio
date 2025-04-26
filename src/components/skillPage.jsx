@@ -81,7 +81,7 @@ export default function Skill() {
                   </div>
                 </div>
                 <div className="iconContainer">
-                  <p>{skill.percent}</p>
+                  <p className="text9 textStyle4">{skill.percent}</p>
                 </div>
               </div>
             ))}
@@ -105,7 +105,7 @@ export default function Skill() {
                     </div>
                   </div>
                   <div className="iconContainer">
-                    <p>{item.percent}</p>
+                    <p className="text9 textStyle4">{item.percent}</p>
                   </div>
                 </div>
               ))}

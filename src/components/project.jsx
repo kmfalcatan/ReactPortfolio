@@ -60,7 +60,7 @@ export default function Project() {
             </div>
 
             <div className="dateContainer">
-              <p className="text9">March 18, 2025</p>
+              <p className="text9">March <span className="textStyle4">18, 2025</span></p>
             </div>
 
             <div className="viewButtonContainer">
@@ -90,7 +90,7 @@ export default function Project() {
             </div>
 
             <div className="dateContainer">
-              <p className="text9">April 7, 2025</p>
+              <p className="text9">April <span  className="textStyle4">03, 2025</span></p>
             </div>
 
             <div className="viewButtonContainer">
@@ -120,7 +120,7 @@ export default function Project() {
             </div>
 
             <div className="dateContainer">
-              <p className="text9">April 7, 2025</p>
+              <p className="text9">April <span className="textStyle4">25, 2025</span></p>
             </div>
 
             <div className="viewButtonContainer">
