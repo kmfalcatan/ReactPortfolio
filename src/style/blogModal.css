@@ -1,0 +1,246 @@
+.blogModalContainer{
+  outline: red dashed 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  overflow-x: hidden;
+  padding-bottom: 1rem;
+}
+
+body{
+  background-color: #0b0c10;
+}
+
+.backContainer{
+  outline: white dashed 1px;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  background-color: #0b0c10;
+}
+
+.subBackContainer{
+  outline: white dashed 1px;
+  height: 100%;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow1{
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.arrow1:hover{
+  transform: scale(1.1);
+}
+
+.blogImageContainer{
+  outline: white dashed 1px;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.blogImage{
+  height: 100%;
+}
+
+.dayContainer{
+  outline: white dashed 1px;
+  position: absolute;
+  top: 19rem;
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subDayContainer{
+  outline: white dashed 1px;
+  height: 100%;
+  width: 90%;
+  border-radius: 1rem;
+  background-color: #222831;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.dayText{
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.agenda{
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  width: 90%;
+  text-align: center;
+  outline: white dashed 1px;
+}
+
+.dateTour{
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  color: rgb(131, 131, 131);
+}
+
+.paragraphContainer{
+  outline: red dashed 1px;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.introductionContainer, .expirienceContainer{
+  outline: red dashed 1px;
+  width: 90%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.intro{
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "roboto";
+}
+
+.fontStyle, .experience{
+  font-family: "Roboto";
+  font-size: 1.2rem;
+}
+
+.blogImageContainer1{
+  outline: red dashed 1px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.subBlogImgContainer{
+  outline: red dashed 1px;
+  width: 90%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.blogImg{
+  width: 100%;
+}
+
+.nextContainer{
+  position: absolute;
+  outline: red dashed 1px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subNextContainer{
+  outline: red dashed 1px;
+  height: 100%;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowBack{
+  width: 3rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.arrowBack:hover{
+  transform: scale(1.1);
+}
+
+.arrowBack:active{
+  transform: scale(1);
+}
+
+.blogImg.fade {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+/*tablet*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .blogImageContainer{
+    overflow: hidden;
+  }
+  
+  .blogImage{
+    width: 100%;
+    height: auto;
+  }
+}
+
+  /*laptop*/
+@media only screen and (min-width: 1025px) {
+  .blogImageContainer{
+    overflow: hidden;
+  }
+  
+  .blogImage{
+    width: 100%;
+    height: auto;
+  }
+
+  .subDayContainer{
+    height: 8rem;
+    width: 70%;
+  }
+
+  .agenda{
+    width: 70%;
+  }
+
+  .dayContainer{
+    top: 25rem;
+  }
+
+  .blogImageContainer{
+    height: 27rem;
+  }
+
+  .introductionContainer, .expirienceContainer{
+    width: 70%;
+  }
+
+  .subBlogImgContainer{
+    width: 35rem;
+  }
+}

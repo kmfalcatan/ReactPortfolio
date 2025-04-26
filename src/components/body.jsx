@@ -7,36 +7,36 @@ import About from "./aboutPage";
 import Skill from "./skillPage";
 import Project from "./project";
 import Contact from "./contact";
-import Blog from "./blog"
+import Blog from "./blog";
 
-export default function body() {
+export default function Body() {
   return (
     <div className="container">
-      <Background/>
-      <Header/>
+      <Background />
+      <Header />
 
       <div id="home" className="homeContainer">
-        <Home/>
+        <Home />
       </div>
 
       <div id="about" className="aboutContainer">
-        <About/>
+        <About />
       </div>
 
       <div className="skillContainer" id="skill">
-        <Skill/>
+        <Skill />
       </div>
 
       <div id="project" className="projectContainer">
-        <Project/>
+        <Project />
       </div>
-      
+
       <div id="blog" className="blogContainer">
-        <Blog/>
+        <Blog />
       </div>
 
       <div id="contact" className="contactContainer">
-        <Contact/>
+        <Contact />
       </div>
     </div>
   );

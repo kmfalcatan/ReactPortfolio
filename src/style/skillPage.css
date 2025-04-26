@@ -143,10 +143,15 @@
   justify-content: center;
 }
 
+.textStyle4{
+  font-family: "Roboto";
+  color: #c5c6c7;
+}
+
 .subDevContainer {
   position: absolute;
   top: -1.3rem;
-  background-color: white;
+  background-color: rgb(34, 34, 34);
   color: black;
   padding: 0.5rem;
   left: 1rem;

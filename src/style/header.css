@@ -36,7 +36,7 @@ p{
   justify-content: center;
   flex-direction: row;
   gap: 0.5rem;
-  background-color: black;
+  background-color: #0b0c10;
   position: fixed;
   top: 0;
   width: 100%;
@@ -162,7 +162,7 @@ p{
 @media only screen and (min-width: 1025px){
   .button{
     font-size: 1.2rem;
-    width: 6rem;
+    width: 8rem;
   }
 
   .mobileHeaderContainer{
