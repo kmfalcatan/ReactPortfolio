@@ -118,7 +118,7 @@ p{
   transition: all 0.15s;
   font-size: 1.2rem;
   font-family: 'Space Odyssey', sans-serif;
-  background-color: transparent;
+  background-color: #0b0c10;
   color: white;
   animation: fadein 1s linear;
 }

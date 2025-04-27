@@ -54,11 +54,11 @@ p{
 
 .subProject1{
   position: relative;
-  height: 17rem;
+  height: 18rem;
   border-radius: 1rem;
   width: 17rem;
+  background-color: #222831;
   border: solid white 1px;
-  background-color: rgba(255, 255, 255, 0.171);
   transition: all 0.15s;
 }
 

@@ -1,5 +1,4 @@
 .blogModalContainer{
-  outline: red dashed 1px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -13,7 +12,6 @@ body{
 }
 
 .backContainer{
-  outline: white dashed 1px;
   height: 3rem;
   display: flex;
   align-items: center;
@@ -25,7 +23,6 @@ body{
 }
 
 .subBackContainer{
-  outline: white dashed 1px;
   height: 100%;
   width: 3rem;
   display: flex;
@@ -44,7 +41,6 @@ body{
 }
 
 .blogImageContainer{
-  outline: white dashed 1px;
   height: 20rem;
   display: flex;
   justify-content: center;
@@ -58,7 +54,6 @@ body{
 }
 
 .dayContainer{
-  outline: white dashed 1px;
   position: absolute;
   top: 19rem;
   height: 10rem;
@@ -69,7 +64,6 @@ body{
 }
 
 .subDayContainer{
-  outline: white dashed 1px;
   height: 100%;
   width: 90%;
   border-radius: 1rem;
@@ -95,7 +89,6 @@ body{
   font-size: 1.2rem;
   width: 90%;
   text-align: center;
-  outline: white dashed 1px;
 }
 
 .dateTour{
@@ -108,7 +101,6 @@ body{
 }
 
 .paragraphContainer{
-  outline: red dashed 1px;
   margin-top: 6rem;
   display: flex;
   flex-direction: column;
@@ -117,7 +109,6 @@ body{
 }
 
 .introductionContainer, .expirienceContainer{
-  outline: red dashed 1px;
   width: 90%;
   text-align: justify;
   display: flex;
@@ -137,27 +128,39 @@ body{
 }
 
 .blogImageContainer1{
-  outline: red dashed 1px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
+.projectPicture1{
+  height: 9.5rem;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.textStyle1{
+  font-family: "Roboto";
+}
+
 .subBlogImgContainer{
-  outline: red dashed 1px;
+  background-color: #222831;
+  border-radius: 1rem;
   width: 90%;
+  max-height: 20rem;
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .blogImg{
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .nextContainer{
   position: absolute;
-  outline: red dashed 1px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -165,7 +168,6 @@ body{
 }
 
 .subNextContainer{
-  outline: red dashed 1px;
   height: 100%;
   width: 3rem;
   display: flex;
@@ -188,8 +190,6 @@ body{
 }
 
 .blogImg.fade {
-  width: 100%;
-  height: auto;
   border-radius: 15px;
   object-fit: cover;
   transition: opacity 0.5s ease-in-out;
@@ -241,6 +241,6 @@ body{
   }
 
   .subBlogImgContainer{
-    width: 35rem;
+    width: 26rem;
   }
 }

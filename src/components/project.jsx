@@ -5,6 +5,8 @@ import GitHub from "../assets/logo-github.svg"
 import WmsuCourse from "../assets/WmsuCourse.jpg"
 import TodoList from "../assets/todoList.jpg"
 import Pokemon from "../assets/pokemon.jpg"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Project() {
   const sectionRef = useRef(null);
@@ -36,9 +38,13 @@ export default function Project() {
         }
       };
     }, []);
+    
+    useEffect(() => {
+        AOS.init({ duration: 1000, once: false });
+      }, []);
 
   return(
-    <div ref={sectionRef} className="subProjectContainer">
+    <div ref={sectionRef} className="subProjectContainer" data-aos="fade">
       <div className="titleContainer2">
         <p className="text2 textStyle">Projects</p>
         <p className="text3 textStyle">This project is a college-based web application I developed to showcase my front-end development skills using modern technologies.</p>
@@ -56,7 +62,7 @@ export default function Project() {
             </div>
 
             <div className="projectDescriptionContainer">
-              <p className="textStyle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis delectus optio</p>
+              <p className="textStyle">The WMSU course recommendation system suggests courses based on student performance, including grades, CET scores, and personality assessments.</p>
             </div>
 
             <div className="dateContainer">
@@ -68,7 +74,7 @@ export default function Project() {
                 <img className="icon" src={Eye} alt="" /> 
               </a>
               
-              <a href="">
+              <a href="https://github.com/kmfalcatan/CapstoneProject.git" target="_blank">
                 <img className="icon" src={GitHub} alt="" />
               </a>
             </div>
@@ -86,7 +92,7 @@ export default function Project() {
             </div>
 
             <div className="projectDescriptionContainer">
-              <p className="textStyle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis delectus optio</p>
+              <p className="textStyle">The To-Do List allows users to manage and track tasks, ensuring they stay organized and on top of their responsibilities.</p>
             </div>
 
             <div className="dateContainer">
@@ -98,7 +104,7 @@ export default function Project() {
                 <img className="icon" src={Eye} alt="" /> 
               </a>
               
-              <a href="">
+              <a href="https://github.com/kmfalcatan/ToDoList.git" target="_blank">
                 <img className="icon" src={GitHub} alt="" />
               </a>
             </div>
@@ -116,7 +122,7 @@ export default function Project() {
             </div>
 
             <div className="projectDescriptionContainer">
-              <p className="textStyle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis delectus optio</p>
+              <p className="textStyle">The Pokémon game lets players build teams, battle, and explore the world of Pokémon, enhancing their experience through strategic gameplay.</p>
             </div>
 
             <div className="dateContainer">
@@ -128,7 +134,7 @@ export default function Project() {
                 <img className="icon" src={Eye} alt="" /> 
               </a>
               
-              <a href="">
+              <a href="https://github.com/kmfalcatan/PokemonGame.git" target="_blank">
                 <img className="icon" src={GitHub} alt="" />
               </a>
             </div>

@@ -1,16 +1,28 @@
 import "../style/blogModal.css";
-import Day1 from "../assets/day1.jpg";
 import Back from "../assets/back.svg";
 import Next from "../assets/next.svg";
 import Close from "../assets/x.svg";
-import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react"
+import AOS from "aos";
+import "aos/dist/aos.css";;
 
 function BlogModal() {
   const navigate = useNavigate();
-  const [currentBlogIndex, setCurrentBlogIndex] = useState(0);
+  const location = useLocation();
 
-  const blogImages = [Day1, WmsuCourse]; // Add more images if you want
+  // Get the passed data from Blog.jsx
+  const {
+    blogImageMain,
+    blogImages = [],
+    dayTitle,
+    agenda,
+    date,
+    introduction,
+    experience
+  } = location.state || {};
+
+  const [currentBlogIndex, setCurrentBlogIndex] = useState(0);
 
   const handleNextBlog = () => {
     setCurrentBlogIndex((prevIndex) => (prevIndex + 1) % blogImages.length);
@@ -22,55 +34,64 @@ function BlogModal() {
     );
   };
 
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" }); // you can also use "smooth" if you want
+  }, []);
+      
+    useEffect(() => {
+        AOS.init({ duration: 1000, once: false });
+      }, []);
+
   return (
-    <div className="blogModalContainer">
+    <div className="blogModalContainer" data-aos="fade">
       <div className="backContainer">
         <div className="subBackContainer">
-          <img className="arrow1" src={Back} onClick={() => navigate("/hero")} alt="" />
+          <img className="arrow1" src={Back} onClick={() => navigate("/hero")} alt="Back" />
         </div>
       </div>
 
       <div className="blogImageContainer">
-        <img className="blogImage" src={Day1} alt="" />
+        <img className="blogImage" src={blogImageMain} alt="Main Blog" />
       </div>
 
       <div className="dayContainer">
         <div className="subDayContainer">
-          <p className="dayText">Day 1</p>
-          <p className="agenda">We visited Luneta Park, admired the Rizal Fountain, and explored the city on a tour.</p>
-          <p className="dateTour">April 07, 2025</p>
+          <p className="dayText">{dayTitle}</p>
+          <p className="agenda">{agenda}</p>
+          <p className="dateTour">{date}</p>
         </div>
       </div>
 
       <div className="paragraphContainer">
         <div className="introductionContainer">
           <p className="intro">Introduction</p>
-          <p className="fontStyle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis animi ipsa rerum illo cumque nam voluptatem deserunt iste praesentium minus in, fuga magnam ut commodi esse sunt. Veritatis, id provident.</p>
+          <p className="fontStyle">{introduction}</p>
         </div>
 
         <div className="blogImageContainer1">
           <div className="subBlogImgContainer">
             <img
-              key={currentBlogIndex}  // Important for re-triggering animation
+              key={currentBlogIndex}
               className="blogImg fade"
               src={blogImages[currentBlogIndex]}
-              alt=""
+              alt="Blog Gallery"
             />
 
             <div className="nextContainer">
               <div className="subNextContainer" onClick={handleBackBlog}>
-                <img className="arrowBack" src={Back} alt="" />
+                <img className="arrowBack" src={Back} alt="Previous" />
               </div>
 
               <div className="subNextContainer" onClick={handleNextBlog}>
-                <img className="arrowBack" src={Next} alt="" />
+                <img className="arrowBack" src={Next} alt="Next" />
               </div>
             </div>
           </div>
         </div>
 
         <div className="expirienceContainer">
-          <p className="experience">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laborum quo, ipsum nostrum ad odit cupiditate, unde mollitia vero illum eveniet facilis perspiciatis tempore nesciunt delectus id iusto cumque fugiat.</p>
+          <p className="experience">{experience}</p>
         </div>
       </div>
     </div>

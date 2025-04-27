@@ -7,6 +7,9 @@ import Tailwind from "../assets/tailwind.svg";
 import Figma from "../assets/figma.svg";
 import Canva from "../assets/canva.svg";
 import VsCode from "../assets/vsCode.svg";
+import { useState, useEffect, useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const skills = [
   { name: "HTML", img: Html },
@@ -42,8 +45,12 @@ const tools = [
 ];
 
 export default function Skill() {
+    
+  useEffect(() => {
+      AOS.init({ duration: 1000, once: false });
+    }, []);
   return (
-    <div className="subSkillContainer">
+    <div className="subSkillContainer" data-aos="fade">
       <div className="titleContainer2">
         <p className="text2 textStyle">Background Skills and Accomplishment</p>
         <p className="text3 textStyle">
@@ -73,7 +80,7 @@ export default function Skill() {
             {devSkills.map((skill, i) => (
               <div className="subPercentContainer" key={i}>
                 <div className="iconContainer">
-                  <img className="icon" src={skill.img} alt="" />
+                  <img className="icon1" src={skill.img} alt="" />
                 </div>
                 <div className="percent">
                   <div className="subPercent">
@@ -97,7 +104,7 @@ export default function Skill() {
               {tool.items.map((item, j) => (
                 <div className="subPercentContainer" key={j}>
                   <div className="iconContainer">
-                    <img className="icon" src={item.img} alt="" />
+                    <img className="icon1" src={item.img} alt="" />
                   </div>
                   <div className="percent">
                     <div className="subPercent">

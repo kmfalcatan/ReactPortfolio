@@ -1,6 +1,8 @@
 import "../style/homePage.css";
 import Moon from "../assets/moon.svg";
 import { useState, useEffect, useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
   const words = ["Khriz", "Front-End Developer", "UI/UX Designer"];
@@ -49,9 +51,13 @@ export default function Home() {
 
     return () => clearTimeout(timer);
   }, [displayedText, isDeleting, currentWordIndex]);
+      
+    useEffect(() => {
+        AOS.init({ duration: 1000, once: false });
+      }, []);
 
   return (
-    <div ref={sectionRef} className={`subHomeContainer ${isVisible ? "visible" : "hidden"}`}>
+    <div ref={sectionRef} className="subHomeContainer" data-aos="fade">
       <p className="text">
         Hi, I'm <span className="typingText">{displayedText}</span>
       </p>
