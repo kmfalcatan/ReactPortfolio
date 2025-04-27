@@ -4,6 +4,8 @@ import Insta from "../assets/instagram.svg"
 import Arrow from "../assets/arrow.svg"
 import Email from "../assets/mail.svg"
 import Message from "../assets/chatbox.svg"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Contact() {
   const sectionRef = useRef(null);
@@ -35,9 +37,13 @@ export default function Contact() {
           }
         };
       }, []);
+
+  useEffect(() => {
+      AOS.init({ duration: 1000, once: false });
+    }, []);
   
   return(
-    <div ref={sectionRef} className="subContactContainer">
+    <div ref={sectionRef} className="subContactContainer" data-aos="fade">
       <div className="titleContainer2">
         <p className="text2 textStyle">Contact Me Anythime!</p>
         <p className="text3 textStyle">Feel free to reach out for collaborations, inquiries, or just to say hello!</p>
@@ -60,7 +66,7 @@ export default function Contact() {
           </div>
 
           <div className="messageButtonContainer">
-            <a href="">
+            <a href="https://www.instagram.com/khriz_marr/" target="_blank">
               <button className="messageButton textStyle">Start chat <img className="arrow" src={Arrow} alt="" /></button>
             </a>
           </div>
