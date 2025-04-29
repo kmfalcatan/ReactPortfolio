@@ -29,12 +29,31 @@ p{
   opacity: 0;
   animation: popup 0.5s ease-in forwards;
   animation-delay: 0.5s;
+  transition: all 0.3s ease;
+}
+
+.text.dark {
+  color: white;
+  font-family: 'Space Odyssey', sans-serif;
+}
+
+.text.light {
+  color: #5D4037;
+  font-family: "rubik";
 }
 
 span{
   color: rgb(255, 0, 0);
   height: 2rem;
+  transition: all 0.3s ease;
+}
+
+span.dark {
   font-family: 'Space Odyssey', sans-serif;
+}
+
+span.light {
+  font-family: "rubik";
 }
 
 .textContainer1{
@@ -56,36 +75,73 @@ span{
 }
 
 .textColor1{
+  animation: popup 0.5s ease-in forwards;
+  animation-delay: 1s;
+  height: 3rem;
+  transition: all 0.3s ease;
+}
+
+.textColor1.dark {
   background: linear-gradient(white, rgb(141, 140, 140) );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  height: 3rem;
   opacity: 0;
   font-family: 'Space Odyssey', sans-serif;
-  animation: popup 0.5s ease-in forwards;
-  animation-delay: 1s;
+}
+
+.textColor1.light {
+  background: linear-gradient( #5D4037 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  font-family: "rubik";
 }
 
 .textColor2{
-  font-family: 'Space Odyssey', sans-serif;
+  height: 3rem;
+  animation: popup 0.5s ease-in forwards;
+  animation-delay: 1.2s;
+  transition: all 0.3s ease;
+}
+
+.textColor2.dark {
   background: linear-gradient(rgba(141, 140, 140, 0.466), rgba(88, 88, 88, 0.466) );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  height: 3rem;
   opacity: 0;
-  animation: popup 0.5s ease-in forwards;
-  animation-delay: 1.2s;
+  font-family: 'Space Odyssey', sans-serif;
+}
+
+.textColor2.light {
+  background: linear-gradient(#5D4037, #5d40376c );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  font-family: "rubik";
 }
 
 .textColor3{
-  background: linear-gradient(rgba(88, 88, 88, 0.26), rgba(3, 3, 3, 0.26) );
-  -webkit-background-clip: text;
-  font-family: 'Space Odyssey', sans-serif;
-  -webkit-text-fill-color: transparent;
   height: 3rem;
   opacity: 0;
   animation: popup 0.5s ease-in forwards;
   animation-delay: 1.4s;
+  transition: all 0.3s ease;
+}
+
+.textColor3.dark {
+  background: linear-gradient(rgba(88, 88, 88, 0.26), rgba(3, 3, 3, 0.26) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  font-family: 'Space Odyssey', sans-serif;
+}
+
+.textColor3.light {
+  background: linear-gradient(#5d40376c, #5d403718 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  font-family: "rubik";
 }
 
 .imageContainer{
@@ -103,6 +159,7 @@ span{
   opacity: 0;
   animation: popup 0.5s ease-in forwards;
   animation-delay: 1.5s;
+  transition: all 0.3s ease;
 }
 
 .hidden {

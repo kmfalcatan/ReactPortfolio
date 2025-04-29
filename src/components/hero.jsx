@@ -3,8 +3,9 @@ import Moon from "../assets/moon.svg";
 import { useState, useEffect, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import SunImage from "../assets/sunImg.svg"
 
-export default function Home() {
+export default function Home({ darkMode }) {
   const words = ["Khriz", "Front-End Developer", "UI/UX Designer"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
@@ -58,19 +59,19 @@ export default function Home() {
 
   return (
     <div ref={sectionRef} className="subHomeContainer" data-aos="fade">
-      <p className="text">
+      <p className={`text ${darkMode ? "dark" : "light"}`}>
         Hi, I'm <span className="typingText">{displayedText}</span>
       </p>
 
       <div className="textContainer1">
         <div className="subTextContainer">
-          <p className="textColor1">WEB DESIGNER</p>
-          <p className="textColor2">WEB DESIGNER</p>
-          <p className="textColor3">WEB DESIGNER</p>
+          <p className={`textColor1 ${darkMode ? "dark" : "light"}`}>WEB DESIGNER</p>
+          <p className={`textColor2 ${darkMode ? "dark" : "light"}`}>WEB DESIGNER</p>
+          <p className={`textColor3 ${darkMode ? "dark" : "light"}`}>WEB DESIGNER</p>
         </div>
 
         <div className="imageContainer">
-          <img className="moon" src={Moon} alt="Moon" />
+          <img className="moon" src={darkMode ? Moon : SunImage} alt="Moon" />
         </div>
       </div>
     </div>

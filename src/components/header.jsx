@@ -1,70 +1,96 @@
 import "../style/header.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Sun from "../assets/sun.svg";
+import Moon from "../assets/moon-stars.svg";
 
-export default function Header() {
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
+export default function Header({ darkMode, setDarkMode }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  function toggleMenu() {
-    setMenuOpen(!menuOpen);
-  }
+  const toggleMenu = () => setMenuOpen(prev => !prev);
+  const toggleTheme = () => setDarkMode(prev => !prev);
 
-  useEffect(() => {
-    const header = document.querySelector(".menubarContainer");
-    const navbar = document.querySelector(".subMenubarContainer");
-
-    if (header && navbar) {
-      header.addEventListener("click", function () {
-        navbar.classList.toggle("fadeIn");
-      });
-    }
-
-    return () => {
-      if (header) {
-        header.removeEventListener("click", toggleMenu);
-      }
-    };
-  }, []);
+  const scrollToSection = (id) => {
+    setMenuOpen(false);
+    setTimeout(() => {
+      const section = document.getElementById(id);
+      if (section) section.scrollIntoView({ behavior: "smooth" });
+    }, 600);
+  };
 
   return (
-    <div className="headerContainer">
+    <div className={`headerContainer ${darkMode ? "dark" : "light"}`}>
       <div className="subHeaderContainer1">
-        <button onClick={() => scrollToSection("home")} className="button textStyle">Home</button>
-        <button onClick={() => scrollToSection("about")} className="button textStyle">About</button>
-        <button onClick={() => scrollToSection("skill")} className="button textStyle">Skills</button>
-        <button onClick={() => scrollToSection("project")} className="button textStyle">Project</button>
-        <button onClick={() => scrollToSection("blog")} className="button textStyle">Blog Post</button>
-        <button onClick={() => scrollToSection("experience")} className="button textStyle">Experience</button>
-        <button onClick={() => scrollToSection("contact")} className="button textStyle">Contact</button>
+        {["home", "about", "skill", "project", "blog", "experience", "contact"].map((id) => (
+          <button
+            key={id}
+            onClick={() => scrollToSection(id)}
+            className={`button textStyle ${darkMode ? "dark" : "light"}`}
+          >
+            {id.charAt(0).toUpperCase() + id.slice(1)}
+          </button>
+        ))}
       </div>
 
       <div className="mobileHeaderContainer">
         <div className="subMobileHeaderContainer">
-          <div 
-            className={`menubarContainer ${menuOpen ? "change" : ""}`} 
+          <div
+            className={`menubarContainer ${menuOpen ? "change" : ""}`}
             onClick={toggleMenu}
           >
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
+            <div className={`line ${darkMode ? "dark" : "light"}`}></div>
+            <div className={`line ${darkMode ? "dark" : "light"}`}></div>
+            <div className={`line ${darkMode ? "dark" : "light"}`}></div>
           </div>
 
-          <div className={`subMenubarContainer ${menuOpen ? "fadeIn" : ""}`} >
-            <button onClick={() => scrollToSection("home")} className="button2 textStyle">Home</button>
-            <button onClick={() => scrollToSection("about")} className="button2 textStyle">About</button>
-            <button onClick={() => scrollToSection("skill")} className="button2 textStyle">Skills</button>
-            <button onClick={() => scrollToSection("project")} className="button2 textStyle">Project</button>
-            <button onClick={() => scrollToSection("blog")} className="button2 textStyle">Blog Post</button>
-            <button onClick={() => scrollToSection("experience")} className="button2 textStyle">Experience</button>
-            <button onClick={() => scrollToSection("contact")} className="button2 textStyle">Contact</button>
-          </div>
+          <AnimatePresence>
+            {menuOpen && (
+              <motion.div
+                key="mobileMenu"
+                initial={{ clipPath: "circle(0% at 0% 0%)", opacity: 0 }}
+                animate={{ clipPath: "circle(150% at 0% 0%)", opacity: 1 }}
+                exit={{ clipPath: "circle(0% at 0% 0%)", opacity: 0 }}
+                transition={{ duration: 0.6, ease: "easeInOut" }}
+                className={`subMenubarContainer ${darkMode ? "dark" : "light"}`}
+                style={{
+                  position: "fixed",
+                  top: 0,
+                  left: 0,
+                  width: "100vw",
+                  height: "100vh",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "left",
+                }}
+              >
+                {["home", "about", "skill", "project", "blog", "experience", "contact"].map((id) => (
+                  <motion.button
+                    key={id}
+                    onClick={() => scrollToSection(id)}
+                    className={`button2 textStyle ${darkMode ? "dark" : "light"}`}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    transition={{ delay: 0.3 }}
+                  >
+                    {id.charAt(0).toUpperCase() + id.slice(1)}
+                  </motion.button>
+                ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
+      </div>
+
+      <div
+        className={`darkLightModeContainer ${darkMode ? "dark" : "light"}`}
+        onClick={toggleTheme}
+      >
+        <img
+          src={darkMode ? Sun : Moon}
+          alt="theme toggle"
+          className={`themeIcon ${darkMode ? "dark" : "light"}`}
+        />
       </div>
     </div>
   );
