@@ -13,6 +13,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  gap: 1rem;
 }
 
 .education5{
@@ -42,20 +43,34 @@
 
 .line3{
   height: 100%;
-  border: solid #c5c6c7 1px;
+}
+
+.line3.dark{
+  border: solid #d9d9d9 1px;
+}
+
+.line3.light{
+  border: solid #FBC02D 1px;
 }
 
 .schoolContainer{
   width: 100%;
   border-radius: 1rem;
-  border: solid #c5c6c7 1px;
   position: relative;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-bottom: 1rem;
+}
+
+.schoolContainer.dark{
   background-color: #222831;
+  border: solid #c5c6c7 1px;
+}
+
+.schoolContainer.light{
+  background-color: #FFE0B2;
+  border:  solid #FBC02D 1px;
 }
 
 .circleContainer1{
@@ -65,12 +80,29 @@
   position: absolute;
   left: -2.69rem;
   top: -0.2rem;
-  background-color: #c5c6c7;
+}
+
+.circleContainer1.dark{
+  background-color: #d9d9d9;
+}
+
+.circleContainer1.light{
+  background-color: #FBC02D;
 }
 
 .yearContainer{
   text-align: left;
   font-size: 1.2rem;
+}
+
+.yearContainer.dark{
+  color: #d9d9d9;
+  font-family: 'rubik';
+}
+
+.yearContainer.light{
+  color: #5D4037;
+  font-family: 'rubik';
 }
 
 .school{
@@ -80,9 +112,37 @@
   font-weight: bold;
 }
 
+.school.dark{
+  color: #d9d9d9;
+  font-family: 'rubik';
+}
+
+.school.light{
+  color: #5D4037;
+  font-family: 'rubik';
+}
+
+.aboutSchool.dark{
+  color: #d9d9d9;
+  font-family: 'rubik';
+}
+
+.aboutSchool.light{
+  color: #5D4037;
+  font-family: 'rubik';
+}
+
 .aboutSchool{
   text-align: left;
   font-size: 1.2rem;
+}
+
+.linkCert.light{
+  color: #FFA726;
+}
+
+.linkCert.dark{
+  color: #2c81ff;
 }
 
 /*tablet*/

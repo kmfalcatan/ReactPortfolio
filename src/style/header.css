@@ -3,14 +3,13 @@
   width: 4rem;
   border-radius: 0.5rem;
   background-color: transparent;
-  color: white;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .button.dark {
-  color: white;
+  color: #D9D9D9;
   font-family: 'Space Odyssey', sans-serif;
 }
 
@@ -19,13 +18,15 @@
   font-family: "rubik";
 }
 
-p{
-  font-family: 'Space Odyssey', sans-serif;
-}
-
-.button:hover{
+.dark .button:hover{
   background-color: white;
   color: black;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+.light .button:hover{
+  background-color: #FFA000;
   transform: scale(1.1);
   box-shadow: 0px 0px 20px rgb(255, 255, 255);
 }

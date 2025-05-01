@@ -19,8 +19,28 @@
   font-weight: bold;
 }
 
+.text2.dark{
+  font-family: 'Space Odyssey', sans-serif;
+  color: #D9D9D9;
+}
+
+.text2.light{
+  font-family: "Rubik";
+  color: #5D4037;
+}
+
 .text3 {
   font-size: 1.2rem;
+}
+
+.text3.dark{
+  font-family: 'Space Odyssey', sans-serif;
+  color: #D9D9D9;
+}
+
+.text3.light{
+  font-family: "Rubik";
+  color: #5D4037;
 }
 
 .logoContainer {
@@ -37,8 +57,6 @@
   height: 12rem;
   width: 8rem;
   border-radius: 10rem;
-  border: solid white 1px;
-  background-color: #222831;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,8 +64,22 @@
   transition: all 0.15s;
 }
 
-.subLogoContainer:hover{
+.subLogoContainer.dark{
+  background-color: #222831;
+  border: solid white 1px;
+}
+
+.subLogoContainer.light{
+  border: solid #FBC02D 1px;
+  background-color: #FFE0B2;
+}
+
+.dark .subLogoContainer:hover{
   box-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+
+.light .subLogoContainer:hover{
+  box-shadow: 0px 0px 30px #FBC02D;
 }
 
 .hidden {
@@ -95,8 +127,6 @@
 .devContainer1{
   height: 22rem;
   width: 90%;
-  background-color: #222831;
-  border: solid white 1px;
   border-radius: 1rem;
   position: relative;
   padding: 0rem 0.5rem 0 0.5rem;
@@ -104,6 +134,16 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+
+.devContainer1.dark{
+  background-color: #222831;
+  border: solid white 1px;
+}
+
+.devContainer1.light{
+  background-color: #FFE0B2;
+  border: solid #FBC02D 1px;
 }
 
 .toolContainer {
@@ -118,15 +158,33 @@
 .subToolContainer {
   height: 9.5rem;
   width: 90%;
-  background-color: #222831;
-  border: solid white 1px;
   border-radius: 1rem;
   position: relative;
   padding: 0rem 0.5rem 0 0.5rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center;  
+}
+
+.subToolContainer.dark{
+  background-color: #222831;
+  border: solid white 1px;
+}
+
+.subToolContainer.light{
+  background-color: #FFE0B2;
+  border: solid #FBC02D 1px;
+}
+
+.subToolContainer1.dark{
+  background-color: #222831;
+  border: solid white 1px;
+}
+
+.subToolContainer1.light{
+  background-color: #FFE0B2;
+  border: solid #FBC02D 1px;
 }
 
 .subToolContainer1 {
@@ -143,20 +201,35 @@
   justify-content: center;
 }
 
-.textStyle4{
-  font-family: "Roboto";
-  color: #c5c6c7;
+.text9.dark{
+  color: #D9D9D9;
+  font-family: "rubik";
+}
+
+.text9.light{
+  color: #FBC02D;
+  font-family: "rubik";
 }
 
 .subDevContainer {
   position: absolute;
   top: -1.3rem;
-  background-color: rgb(34, 34, 34);
-  color: black;
   padding: 0.5rem;
   left: 1rem;
   border-radius: 0.5rem;
   font-size: 1.2rem;
+}
+
+.subDevContainer.dark{
+  background-color: rgb(34, 34, 34);
+  color: #D9D9D9;
+  font-family: 'Space Odyssey', sans-serif;
+}
+
+.subDevContainer.light{
+  background-color: #FBC02D;
+  color: #5D4037;
+  font-family: 'rubik';
 }
 
 .subPercentContainer {
@@ -191,14 +264,20 @@
   position: relative;
   display: flex;
   align-items: center;
-  border: solid white 1px;
+}
+
+.subPercent.dark{
+  border: solid #D9D9D9 1px;
+}
+
+.subPercent.light{
+  border: solid #FBC02D 1px;
 }
 
 .circleContainer {
   height: 1rem;
   position: absolute;
   width: 1rem;
-  background-color: rgb(255, 250, 250);
   border-radius: 1rem;
   margin-left: 70%;
 }
@@ -207,7 +286,6 @@
   height: 1rem;
   position: absolute;
   width: 1rem;
-  background-color: white;
   border-radius: 1rem;
   margin-left: 60%;
 }
@@ -216,7 +294,6 @@
   height: 1rem;
   position: absolute;
   width: 1rem;
-  background-color: white;
   border-radius: 1rem;
   margin-left: 40%;
 }
@@ -225,7 +302,6 @@
   height: 1rem;
   position: absolute;
   width: 1rem;
-  background-color: white;
   border-radius: 1rem;
   margin-left: 10%;
 }
@@ -234,7 +310,6 @@
   height: 1rem;
   position: absolute;
   width: 1rem;
-  background-color: white;
   border-radius: 1rem;
   margin-left: 50%;
 }
@@ -243,16 +318,78 @@
   height: 1rem;
   position: absolute;
   width: 1rem;
-  background-color: white;
   border-radius: 1rem;
   margin-left: 70%;
+}
+
+.circleContainer.dark{
+  background-color: #D9D9D9;
+}
+
+.circleContainer.light{
+  background-color: #FBC02D;
+}
+
+.circleContainer2.dark{
+  background-color: #D9D9D9;
+}
+
+.circleContainer2.light{
+  background-color: #FBC02D;
+}
+
+.circleContainer3.dark{
+  background-color: #D9D9D9;
+}
+
+.circleContainer3.light{
+  background-color: #FBC02D;
+}
+
+.circleContainer4.dark{
+  background-color: #D9D9D9;
+}
+
+.circleContainer4.light{
+  background-color: #FBC02D;
+}
+
+.circleContainer5.dark{
+  background-color: #D9D9D9;
+}
+
+.circleContainer5.light{
+  background-color: #FBC02D;
+}
+
+.circleContainer6.dark{
+  background-color: #D9D9D9;
+}
+
+.circleContainer6.light{
+  background-color: #FBC02D;
+}
+
+.circleContainer7.dark{
+  background-color: #D9D9D9;
+}
+
+.circleContainer7.light{
+  background-color: #FBC02D;
+}
+
+.circleContainer8.dark{
+  background-color: #D9D9D9;
+}
+
+.circleContainer8.light{
+  background-color: #FBC02D;
 }
 
 .circleContainer7 {
   height: 1rem;
   position: absolute;
   width: 1rem;
-  background-color: white;
   border-radius: 1rem;
   margin-left: 80%;
 }
@@ -261,7 +398,6 @@
   height: 1rem;
   position: absolute;
   width: 1rem;
-  background-color: white;
   border-radius: 1rem;
   margin-left: 90%;
 }

@@ -5,13 +5,12 @@ import Close from "../assets/x.svg";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react"
 import AOS from "aos";
-import "aos/dist/aos.css";;
+import "aos/dist/aos.css";
 
 function BlogModal() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Get the passed data from Blog.jsx
   const {
     blogImageMain,
     blogImages = [],
@@ -34,20 +33,26 @@ function BlogModal() {
     );
   };
 
-  // Scroll to top when component mounts
+  // Get dark mode from localStorage
+  const [darkMode, setDarkMode] = useState(false);
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" }); // you can also use "smooth" if you want
+    const storedTheme = localStorage.getItem("darkMode");
+    setDarkMode(storedTheme === "true");
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
       
-    useEffect(() => {
-        AOS.init({ duration: 1000, once: false });
-      }, []);
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false });
+  }, []);
 
   return (
-    <div className="blogModalContainer" data-aos="fade">
-      <div className="backContainer">
+    <div className={`blogModalContainer ${darkMode ? "dark" : "light"}`} data-aos="fade">
+      <div className={`backContainer ${darkMode ? "dark" : "light"}`}>
         <div className="subBackContainer">
-          <img className="arrow1" src={Back} onClick={() => navigate("/hero")} alt="Back" />
+          <img className={`arrow1 ${darkMode ? "dark" : "light"}`} src={Back} onClick={() => navigate("/hero")} alt="Back" />
         </div>
       </div>
 
@@ -56,21 +61,21 @@ function BlogModal() {
       </div>
 
       <div className="dayContainer">
-        <div className="subDayContainer">
-          <p className="dayText">{dayTitle}</p>
-          <p className="agenda">{agenda}</p>
-          <p className="dateTour">{date}</p>
+        <div className={`subDayContainer ${darkMode ? "dark" : "light"}`}>
+          <p className={`dayText ${darkMode ? "dark" : "light"}`}>{dayTitle}</p>
+          <p className={`agenda ${darkMode ? "dark" : "light"}`}>{agenda}</p>
+          <p className={`dateTour ${darkMode ? "dark" : "light"}`}>{date}</p>
         </div>
       </div>
 
       <div className="paragraphContainer">
         <div className="introductionContainer">
-          <p className="intro">Introduction</p>
-          <p className="fontStyle">{introduction}</p>
+          <p className={`intro ${darkMode ? "dark" : "light"}`}>Introduction</p>
+          <p className={`fontStyle ${darkMode ? "dark" : "light"}`}>{introduction}</p>
         </div>
 
         <div className="blogImageContainer1">
-          <div className="subBlogImgContainer">
+          <div className={`subBlogImgContainer ${darkMode ? "dark" : "light"}`}>
             <img
               key={currentBlogIndex}
               className="blogImg fade"
@@ -91,7 +96,7 @@ function BlogModal() {
         </div>
 
         <div className="expirienceContainer">
-          <p className="experience">{experience}</p>
+          <p className={`experience ${darkMode ? "dark" : "light"}`}>{experience}</p>
         </div>
       </div>
     </div>

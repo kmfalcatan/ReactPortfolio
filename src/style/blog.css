@@ -6,17 +6,23 @@
   opacity: 1;
 }
 
-p{
-  color: #c5c6c7;
+.textStyle1.light{
+  font-family: 'rubik';
+  color: #5D4037;
 }
 
-.dateContainer{
-  padding-left: 0.5rem 0.5rem 0.5rem 0;
+.textStyle1.dark{
+  color: #d9d9d9;
+  font-family: 'rubik';
+}
+
+.dateContainer1{
   display: flex;
   align-items: center;
-  padding-left: 0.5rem;
+  padding-left: 0.2rem;
   height: 1.5rem;
-  color: rgba(255, 255, 255, 0.596);
+  position: absolute;
+  bottom: 0.2rem;
 }
 
 .subProjectContainer{
@@ -54,12 +60,20 @@ p{
 
 .subProject1{
   position: relative;
-  height: 18rem;
+  height: 19.5rem;
   border-radius: 1rem;
   width: 17rem;
-  background-color: #222831;
-  border: solid white 1px;
   transition: all 0.15s;
+}
+
+.subProject1.dark{
+  background-color: #222831;
+  border: solid #d9d9d9 1px;
+}
+
+.subProject1.light{
+  border: solid #FBC02D 1px;
+  background-color: #FFE0B2;
 }
 
 .subProject1:hover{
@@ -99,7 +113,7 @@ p{
   align-items: center;
   justify-content: left;
   color: white;
-  padding-left: 0.5rem;
+  padding: 0 0.2rem;
   margin-top: 0.5rem;
 }
 
@@ -112,7 +126,6 @@ p{
   align-items: center;
   flex-direction: row;
   gap: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .icon{
