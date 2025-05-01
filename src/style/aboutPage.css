@@ -10,8 +10,13 @@
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-p, .textStyle{
+
+.textStyle.dark{
   font-family: 'Space Odyssey', sans-serif;
+}
+
+.textStyle.light{
+  font-family: "Rubik";
 }
 
 .subAboutContainer{
@@ -64,9 +69,6 @@ p, .textStyle{
   text-align: center;
   width: 85%;
   border-radius: 1rem;
-  border: solid white 1px;
-  font-family: 'Space Odyssey', sans-serif;
-  background-color: #222831;
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.322);
   font-size: 1.2rem;
   font-weight: normal;
@@ -78,6 +80,18 @@ p, .textStyle{
   gap: 1rem;
 }
 
+.subTextContainer3.dark{
+  font-family: 'Space Odyssey', sans-serif;
+  background-color: #222831;
+  border: solid #D9D9D9 1px;
+}
+
+.subTextContainer3.light{
+  font-family: "rubil";
+  background-color: #FFE0B2;
+  border: solid #FBC02D 1px;
+}
+
 .titleContainer{
   display: flex;
   align-items: center;
@@ -85,6 +99,17 @@ p, .textStyle{
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+/* aboutPage.css */
+
+.titleContainer.dark, .textStyle.dark {
+  color: #D9D9D9;
+}
+
+.titleContainer.light, .textStyle.light {
+  color: #5D4037;
+}
+
 
 .button1{
   background-color: #45a29e;

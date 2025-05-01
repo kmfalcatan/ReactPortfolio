@@ -8,7 +8,14 @@ export default function Header({ darkMode, setDarkMode }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(prev => !prev);
-  const toggleTheme = () => setDarkMode(prev => !prev);
+  const toggleTheme = () => {
+    setDarkMode(prev => {
+      const newMode = !prev;
+      localStorage.setItem("darkMode", newMode);
+      return newMode;
+    });
+  };
+  
 
   const scrollToSection = (id) => {
     setMenuOpen(false);

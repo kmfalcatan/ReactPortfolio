@@ -5,10 +5,18 @@
   position: relative;
   overflow-x: hidden;
   padding-bottom: 1rem;
+  height: 100%;
+}
+
+.blogModalContainer.dark{
+  background-color: #0b0c10;
+}
+
+.blogModalContainer.light{
+  background-color: #FFF8E1;
 }
 
 body{
-  background-color: #0b0c10;
 }
 
 .backContainer{
@@ -19,7 +27,14 @@ body{
   width: 100%;
   z-index: 1;
   top: 0;
+}
+
+.backContainer.dark{
   background-color: #0b0c10;
+}
+
+.backContainer.light{
+  background-color: #FFF8E1;
 }
 
 .subBackContainer{
@@ -34,6 +49,14 @@ body{
   height: 100%;
   cursor: pointer;
   transition: all 0.15s;
+}
+
+.arrow1.dark{
+  filter: invert(0);
+}
+
+.arrow1.light{
+  filter: invert(1);
 }
 
 .arrow1:hover{
@@ -67,7 +90,6 @@ body{
   height: 100%;
   width: 90%;
   border-radius: 1rem;
-  background-color: #222831;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -76,28 +98,62 @@ body{
   justify-content: center;
 }
 
+.subDayContainer.dark{
+  background-color: #222831;
+}
+
+.subDayContainer.light{
+  background-color: #FFE0B2;
+}
+
 .dayText{
-  font-family: "Roboto";
   font-size: 1.5rem;
   font-weight: bold;
   width: 100%;
   text-align: center;
 }
 
+.dayText.dark{
+  color: #D9D9D9;
+  font-family: 'rubik';
+}
+
+.dayText.light{
+  color: #5D4037;
+  font-family: 'rubik';
+}
+
 .agenda{
-  font-family: "Roboto";
   font-size: 1.2rem;
   width: 90%;
   text-align: center;
 }
 
+.agenda.dark{
+  color: #D9D9D9;
+  font-family: 'Space Odyssey', sans-serif;
+}
+
+.agenda.light{
+  color: #5D4037;
+  font-family: 'rubik';
+}
+
 .dateTour{
-  font-family: "Roboto";
   font-size: 0.9rem;
   font-weight: bold;
   width: 100%;
   text-align: center;
-  color: rgb(131, 131, 131);
+}
+
+.dateTour.dark{
+  color: #D9D9D9;
+  font-family: 'rubik';
+}
+
+.dateTour.light{
+  color: #5D4037;
+  font-family: 'rubik';
 }
 
 .paragraphContainer{
@@ -119,12 +175,40 @@ body{
 .intro{
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: "roboto";
+}
+
+.intro.dark{
+  color: #D9D9D9;
+  font-family: 'Space Odyssey', sans-serif;
+}
+
+.intro.light{
+  color: #5D4037;
+  font-family: 'rubik';
 }
 
 .fontStyle, .experience{
-  font-family: "Roboto";
   font-size: 1.2rem;
+}
+
+.fontStyle.dark{
+  color: #D9D9D9;
+  font-family: 'Space Odyssey', sans-serif;
+}
+
+.fontStyle.light{
+  color: #5D4037;
+  font-family: 'rubik';
+}
+
+.experience.dark{
+  color: #D9D9D9;
+  font-family: 'Space Odyssey', sans-serif;
+}
+
+.experience.light{
+  color: #5D4037;
+  font-family: 'rubik';
 }
 
 .blogImageContainer1{
@@ -140,11 +224,10 @@ body{
 }
 
 .textStyle1{
-  font-family: "Roboto";
+  font-family: "rubik";
 }
 
 .subBlogImgContainer{
-  background-color: #222831;
   border-radius: 1rem;
   width: 90%;
   max-height: 20rem;
@@ -152,6 +235,14 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.subBlogImgContainer.dark{
+  background-color: #222831;
+}
+
+.subBlogImgContainer.light{
+  background-color: #FFE0B2;
 }
 
 .blogImg{

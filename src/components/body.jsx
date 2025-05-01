@@ -12,7 +12,10 @@ import Blog from "./blog";
 import Experience from "./experience";
 
 export default function Body() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem("darkMode");
+    return saved === "true"; // returns true if saved is "true"
+  });  
 
   return (
     <div className={`container ${darkMode ? "dark" : "light"}`}>
@@ -23,22 +26,22 @@ export default function Body() {
         <Home darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>
       <div id="about" className="aboutContainer">
-        <About />
+        <About darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>
       <div className="skillContainer" id="skill">
-        <Skill />
+        <Skill darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>
       <div id="project" className="projectContainer">
-        <Project />
+        <Project darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>
       <div id="blog" className="blogContainer">
-        <Blog />
+        <Blog darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>
       <div id="experience" className="experienceContainer">
-        <Experience />
+        <Experience darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>
       <div id="contact" className="contactContainer">
-        <Contact />
+        <Contact darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>
     </div>
   );

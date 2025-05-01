@@ -44,7 +44,7 @@ const tools = [
   },
 ];
 
-export default function Skill() {
+export default function Skill({ darkMode }) {
     
   useEffect(() => {
       AOS.init({ duration: 1000, once: false });
@@ -52,8 +52,8 @@ export default function Skill() {
   return (
     <div className="subSkillContainer" data-aos="fade">
       <div className="titleContainer2">
-        <p className="text2 textStyle">Background Skills and Accomplishment</p>
-        <p className="text3 textStyle">
+        <p className={`text2 ${darkMode ? "dark" : "light"}`}>Background Skills and Accomplishment</p>
+        <p className={`text3 ${darkMode ? "dark" : "light"}`}>
         I developed these skills throughout my college years while studying Information Technology.
         </p>
       </div>
@@ -61,11 +61,11 @@ export default function Skill() {
       <div className="logoContainer">
         {skills.map((skill, i) => (
           <div className="logoTitleContainer" key={i}>
-            <div className="subLogoContainer">
+            <div className={`subLogoContainer ${darkMode ? "dark" : "light"}`}>
               <img className="logo" src={skill.img} alt={skill.name} />
             </div>
             <div className="textContainer4">
-              <p className="textStyle">{skill.name}</p>
+              <p className={`textStyle ${darkMode ? "dark" : "light"}`}>{skill.name}</p>
             </div>
           </div>
         ))}
@@ -73,9 +73,9 @@ export default function Skill() {
 
       <div className="percentContainer">
         <div className="devContainer">
-          <div className="devContainer1">
-            <div className="subDevContainer">
-              <p className="textStyle">Front-End Developer</p>
+          <div className={`devContainer1 ${darkMode ? "dark" : "light"}`}>
+            <div className={`subDevContainer ${darkMode ? "dark" : "light"}`}>
+              <p>Front-End Developer</p>
             </div>
             {devSkills.map((skill, i) => (
               <div className="subPercentContainer" key={i}>
@@ -83,12 +83,12 @@ export default function Skill() {
                   <img className="icon1" src={skill.img} alt="" />
                 </div>
                 <div className="percent">
-                  <div className="subPercent">
-                    <div className={skill.className}></div>
+                  <div className={`subPercent ${darkMode ? "dark" : "light"}`}>
+                    <div className={`${skill.className} ${darkMode ? "dark" : "light"}`}></div>
                   </div>
                 </div>
                 <div className="iconContainer">
-                  <p className="text9 textStyle4">{skill.percent}</p>
+                  <p className={`text9 ${darkMode ? "dark" : "light"}`} >{skill.percent}</p>
                 </div>
               </div>
             ))}
@@ -97,9 +97,9 @@ export default function Skill() {
 
         <div className="toolContainer">
           {tools.map((tool, i) => (
-            <div className={i === 0 ? "subToolContainer" : "subToolContainer1"} key={i}>
-              <div className="subDevContainer">
-                <p className="textStyle">{tool.title}</p>
+            <div className={`${i === 0 ? "subToolContainer" : "subToolContainer1"} ${darkMode ? "dark" : "light"}`} key={i}>
+              <div className={`subDevContainer ${darkMode ? "dark" : "light"}`}>
+                <p>{tool.title}</p>
               </div>
               {tool.items.map((item, j) => (
                 <div className="subPercentContainer" key={j}>
@@ -107,12 +107,12 @@ export default function Skill() {
                     <img className="icon1" src={item.img} alt="" />
                   </div>
                   <div className="percent">
-                    <div className="subPercent">
-                      <div className={item.className}></div>
+                    <div className={`subPercent ${darkMode ? "dark" : "light"}`}>
+                      <div className={`${item.className} ${darkMode ? "dark" : "light"}`}></div>
                     </div>
                   </div>
                   <div className="iconContainer">
-                    <p className="text9 textStyle4">{item.percent}</p>
+                    <p className={`text9 ${darkMode ? "dark" : "light"}`}>{item.percent}</p>
                   </div>
                 </div>
               ))}

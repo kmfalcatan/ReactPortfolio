@@ -49,7 +49,7 @@ import Day5Pic8 from "../assets/day5Pic8.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-export default function Blog() {
+export default function Blog({ darkMode }) {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -79,8 +79,8 @@ export default function Blog() {
   return (
     <div ref={sectionRef} className="subProjectContainer" data-aos="fade">
       <div className="titleContainer2">
-        <p className="text2 textStyle">Blog Post</p>
-        <p className="text3 textStyle">Our educational tour gave us a deeper understanding of important institutions, history, and technology, making it a truly memorable and insightful experience.</p>
+        <p className={`text2 ${darkMode ? "dark" : "light"}`}>Blog Post</p>
+        <p className={`text3 ${darkMode ? "dark" : "light"}`}>Our educational tour gave us a deeper understanding of important institutions, history, and technology, making it a truly memorable and insightful experience.</p>
       </div>
 
       <div className="project">
@@ -96,21 +96,21 @@ export default function Blog() {
             experience: "Our visit to Luneta Park was a memorable one, where we admired the Rizal Fountain, a symbol of the nation's respect for Dr. Jose Rizal, the country's national hero. The fountain, surrounded by lush greenery, added a serene touch to the atmosphere, and we couldn't help but feel the profound history that resonated in the air. Afterward, we explored the city, making our way to Plaza de Armas, a historic site that provided an impressive view of the city's colonial past. The beauty and serenity of these places left us in awe, offering both a peaceful retreat and a meaningful connection to the country's heritage."
           }}
         >
-          <div className="subProject1">
+          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}>
             <div className="projectPictureContainer">
               <img className="projectPicture" src={Day1} alt="Day 1" />
             </div>
 
             <div className="projectNameContainer">
-              <p className="textStyle1">Day 1</p>
+              <p className={`textStyle1 ${darkMode ? "dark" : "light"}`}>Day 1</p>
             </div>
 
-            <div className="projectDescriptionContainer">
-              <p className="textStyle">We visited Luneta Park, admired the Rizal Fountain, and explored the city on a tour.</p>
+            <div className={`projectDescriptionContainer ${darkMode ? "dark" : "light"}`}>
+              <p className={`textStyle ${darkMode ? "dark" : "light"}`}>We visited Luneta Park, admired the Rizal Fountain, and explored the city on a tour.</p>
             </div>
 
-            <div className="dateContainer">
-              <p className="text9">April <span className="textStyle4">07, 2025</span></p>
+            <div className="dateContainer1">
+            <p className={`textStyle ${darkMode ? "dark" : "light"}`}>April <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>07, 2025</span></p>
             </div>
           </div>
         </Link>
@@ -134,21 +134,21 @@ export default function Blog() {
             experience: "At the Port of Subic Bay, we witnessed the bustling activities of one of the country’s most vital ports, known for its strategic location and modern infrastructure. It was fascinating to learn about the operations that keep the port running smoothly. Later, we visited the Subic Bay Exhibition and Convention Center, where we saw the venue’s impressive facilities designed to host international events. It was exciting to be in a place that not only caters to business and trade but also showcases the region's capacity to host large-scale conventions and exhibitions. This visit gave us a deeper appreciation of Subic Bay’s role in both the local and global economy."
           }}
         >
-          <div className="subProject1">
+          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}>
             <div className="projectPictureContainer">
               <img className="projectPicture1" src={Day2} alt="Day 1" />
             </div>
 
             <div className="projectNameContainer">
-              <p className="textStyle1">Day 2</p>
+              <p className={`textStyle1 ${darkMode ? "dark" : "light"}`}>Day 2</p>
             </div>
 
-            <div className="projectDescriptionContainer">
-              <p className="textStyle">We visited the Port of Subic Bay and the Subic Bay Exhibition and Convention Center.</p>
+            <div className={`projectDescriptionContainer ${darkMode ? "dark" : "light"}`}>
+              <p className={`textStyle ${darkMode ? "dark" : "light"}`}>We visited the Port of Subic Bay and the Subic Bay Exhibition and Convention Center.</p>
             </div>
 
-            <div className="dateContainer">
-              <p className="text9">April <span className="textStyle4">08, 2025</span></p>
+            <div className="dateContainer1">
+            <p className={`textStyle ${darkMode ? "dark" : "light"}`}>April <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>08, 2025</span></p>
             </div>
           </div>
         </Link>
@@ -172,21 +172,21 @@ export default function Blog() {
             experience: "During our visit to the Bangko Sentral ng Pilipinas, we learned about how the country's currency is produced and how the economy is managed. Unfortunately, taking pictures inside the facility was not allowed, so I was unable to capture any photos during our visit. Afterward, we went to Hytec Power Inc., where we explored various technologies and equipment related to train management and operations in Manila. It was a very informative and exciting experience that helped us see how both finance and technology play vital roles in the country’s progress."
           }}
         >
-          <div className="subProject1">
+          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}>
             <div className="projectPictureContainer">
               <img className="projectPicture1" src={Day3} alt="Day 1" />
             </div>
 
             <div className="projectNameContainer">
-              <p className="textStyle1">Day 3</p>
+              <p className={`textStyle1 ${darkMode ? "dark" : "light"}`}>Day 3</p>
             </div>
 
-            <div className="projectDescriptionContainer">
-              <p className="textStyle">We visited Hytec Power Inc. and Bangko Sentral ng Pilipinas as part of our educational trip.</p>
+            <div className={`projectDescriptionContainer ${darkMode ? "dark" : "light"}`}>
+              <p className={`textStyle ${darkMode ? "dark" : "light"}`}>We visited Hytec Power Inc. and Bangko Sentral ng Pilipinas as part of our educational trip.</p>
             </div>
 
-            <div className="dateContainer">
-              <p className="text9">April <span className="textStyle4">10, 2025</span></p>
+            <div className="dateContainer1">
+            <p className={`textStyle ${darkMode ? "dark" : "light"}`}>April <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>10, 2025</span></p>
             </div>
           </div>
         </Link>
@@ -210,21 +210,21 @@ export default function Blog() {
             experience: "During our visit to the LRT, we learned about the operations behind Manila’s railway system and saw how trains are managed and maintained to serve thousands of commuters daily. It was fascinating to understand the coordination required to keep the system running smoothly. At the MMDA, we were given insights into how traffic is monitored and managed across the city. We also saw how technology and strategic planning come together to ensure public safety and efficient transportation flow. The experience gave us a deeper appreciation for the people working behind the scenes to make travel safer and more organized."
           }}
         >
-          <div className="subProject1">
+          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}>
             <div className="projectPictureContainer">
               <img className="projectPicture1" src={Day4} alt="Day 1" />
             </div>
 
             <div className="projectNameContainer">
-              <p className="textStyle1">Day 4</p>
+              <p className={`textStyle1 ${darkMode ? "dark" : "light"}`}>Day 4</p>
             </div>
 
-            <div className="projectDescriptionContainer">
-              <p className="textStyle">We visited the LRT and the MMDA to learn more about Manila’s transportation and traffic management systems.</p>
+            <div className={`projectDescriptionContainer ${darkMode ? "dark" : "light"}`}>
+              <p className={`textStyle ${darkMode ? "dark" : "light"}`}>We visited the LRT and the MMDA to learn more about Manila’s transportation and traffic management systems.</p>
             </div>
 
-            <div className="dateContainer">
-              <p className="text9">April <span className="textStyle4">11, 2025</span></p>
+            <div className="dateContainer1">
+            <p className={`textStyle ${darkMode ? "dark" : "light"}`}>April <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>11, 2025</span></p>
             </div>
           </div>
         </Link>
@@ -248,21 +248,21 @@ export default function Blog() {
             experience: "During our trip, we explored The Mansion House, admired its grand architecture, and enjoyed the calm surroundings. We also visited the Philippine Military Academy (PMA), where we saw the impressive grounds and learned about the country's future military leaders. At the Strawberry Farm, we appreciated the vast fields and the fresh air, even though we didn’t try strawberry picking. Lastly, we visited the Bell Church, where the intricate designs and serene environment gave us a glimpse of Baguio’s cultural richness. It was a wonderful experience filled with sightseeing and meaningful memories."
           }}
         >
-          <div className="subProject1">
+          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}>
             <div className="projectPictureContainer">
               <img className="projectPicture1" src={Day5} alt="Day 1" />
             </div>
 
             <div className="projectNameContainer">
-              <p className="textStyle1">Day 5</p>
+              <p className={`textStyle1 ${darkMode ? "dark" : "light"}`}>Day 5</p>
             </div>
 
-            <div className="projectDescriptionContainer">
-              <p className="textStyle">We traveled to Baguio and visited The Mansion House, the Philippine Military Academy (PMA), the Strawberry Farm, and the Bell Church.</p>
+            <div className={`projectDescriptionContainer ${darkMode ? "dark" : "light"}`}>
+              <p className={`textStyle ${darkMode ? "dark" : "light"}`}>We traveled to Baguio and visited The Mansion House, the Philippine Military Academy (PMA), the Strawberry Farm, and the Bell Church.</p>
             </div>
 
-            <div className="dateContainer">
-              <p className="text9">April <span className="textStyle4">12, 2025</span></p>
+            <div className="dateContainer1">
+            <p className={`textStyle ${darkMode ? "dark" : "light"}`}>April <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>12, 2025</span></p>
             </div>
           </div>
         </Link>
