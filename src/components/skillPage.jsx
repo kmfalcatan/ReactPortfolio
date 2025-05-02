@@ -51,7 +51,7 @@ export default function Skill({ darkMode }) {
     }, []);
   return (
     <div className="subSkillContainer" data-aos="fade">
-      <div className="titleContainer2">
+      <div className="titleContainer2" data-aos="fade-up">
         <p className={`text2 ${darkMode ? "dark" : "light"}`}>Background Skills and Accomplishment</p>
         <p className={`text3 ${darkMode ? "dark" : "light"}`}>
         I developed these skills throughout my college years while studying Information Technology.
@@ -60,7 +60,7 @@ export default function Skill({ darkMode }) {
 
       <div className="logoContainer">
         {skills.map((skill, i) => (
-          <div className="logoTitleContainer" key={i}>
+          <div data-aos="fade-up"  data-aos-delay="300" className="logoTitleContainer" key={i}>
             <div className={`subLogoContainer ${darkMode ? "dark" : "light"}`}>
               <img className="logo" src={skill.img} alt={skill.name} />
             </div>
@@ -72,7 +72,7 @@ export default function Skill({ darkMode }) {
       </div>
 
       <div className="percentContainer">
-        <div className="devContainer">
+        <div className="devContainer" data-aos="fade-up"  data-aos-delay="400">
           <div className={`devContainer1 ${darkMode ? "dark" : "light"}`}>
             <div className={`subDevContainer ${darkMode ? "dark" : "light"}`}>
               <p>Front-End Developer</p>
@@ -97,7 +97,7 @@ export default function Skill({ darkMode }) {
 
         <div className="toolContainer">
           {tools.map((tool, i) => (
-            <div className={`${i === 0 ? "subToolContainer" : "subToolContainer1"} ${darkMode ? "dark" : "light"}`} key={i}>
+            <div data-aos="fade-up"  data-aos-delay="500" className={`${i === 0 ? "subToolContainer" : "subToolContainer1"} ${darkMode ? "dark" : "light"}`} key={i}>
               <div className={`subDevContainer ${darkMode ? "dark" : "light"}`}>
                 <p>{tool.title}</p>
               </div>
