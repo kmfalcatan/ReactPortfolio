@@ -6,6 +6,8 @@ import Day2 from "../assets/day2.jpg";
 import Day3 from "../assets/day3.jpg";
 import Day4 from "../assets/day4.jpg";
 import Day5 from "../assets/day5.jpg";
+import Day6 from "../assets/day6.jpg";
+import Day7 from "../assets/day7.jpg";
 import Day1Pic1 from "../assets/day1Pic1.jpg";
 import Day1Pic7 from "../assets/day1Pic2.jpg";
 import Day1Pic2 from "../assets/day1Pic3.jpg";
@@ -46,6 +48,17 @@ import Day5Pic4 from "../assets/day5Pic5.jpg";
 import Day5Pic5 from "../assets/day5Pic6.jpg";
 import Day5Pic6 from "../assets/day5Pic7.jpg";
 import Day5Pic8 from "../assets/day5Pic8.jpg";
+import Day6Pic1 from "../assets/day6Pic1.jpg";
+import Day6Pic7 from "../assets/day6Pic2.jpg";
+import Day6Pic2 from "../assets/day6Pic3.jpg";
+import Day6Pic3 from "../assets/day6Pic4.jpg";
+import Day6Pic4 from "../assets/day6Pic5.jpg";
+import Day6Pic5 from "../assets/day6Pic6.jpg";
+import Day6Pic6 from "../assets/day6Pic7.jpg";
+import Day6Pic8 from "../assets/day6Pic8.jpg";
+import Day7Pic1 from "../assets/day7Pic1.jpg";
+import Day7Pic3 from "../assets/day7Pic2.jpg";
+import Day7Pic2 from "../assets/day7Pic3.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -156,6 +169,44 @@ export default function Blog({ darkMode }) {
         <Link
           to="/blogModal"
           state={{
+            blogImageMain: Day6,
+            blogImages: [Day6Pic1, 
+                         Day6Pic8, 
+                         Day6Pic2, 
+                         Day6Pic3, 
+                         Day6Pic4, 
+                         Day6Pic5, 
+                         Day6Pic6, 
+                         Day6Pic7], // Add more images if you have
+            dayTitle: "Day 3",
+            agenda: "We visited Quezon Memorial Circle and the National Museum of Natural History.",
+            date: "April 09, 2025",
+            introduction: "Our trip took us to two significant and enriching destinations in Manila — the Quezon Memorial Circle and the National Museum of Natural History. Both places offer a unique glimpse into Philippine history, culture, and natural heritage, making them ideal spots for learning and reflection.",
+            experience: "At the Quezon Memorial Circle, we explored the monument dedicated to President Manuel L. Quezon and enjoyed the peaceful atmosphere of the surrounding park. Later, at the National Museum of Natural History, we were amazed by the diverse exhibits showcasing the country’s rich biodiversity, from preserved wildlife to fascinating geological displays. The trip was both educational and enjoyable, leaving us with a deeper appreciation of the Philippines' natural and historical treasures."
+          }}
+        >
+          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="500">
+            <div className="projectPictureContainer">
+              <img className="projectPicture1" src={Day6} alt="Day 1" />
+            </div>
+
+            <div className="projectNameContainer">
+              <p className={`textStyle1 ${darkMode ? "dark" : "light"}`}>Day 3</p>
+            </div>
+
+            <div className={`projectDescriptionContainer ${darkMode ? "dark" : "light"}`}>
+              <p className={`textStyle ${darkMode ? "dark" : "light"}`}>We visited Quezon Memorial Circle and the National Museum of Natural History.</p>
+            </div>
+
+            <div className="dateContainer1">
+            <p className={`textStyle ${darkMode ? "dark" : "light"}`}>April <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>09, 2025</span></p>
+            </div>
+          </div>
+        </Link>
+
+        <Link
+          to="/blogModal"
+          state={{
             blogImageMain: Day3,
             blogImages: [Day3Pic1, 
                          Day3Pic8, 
@@ -172,13 +223,13 @@ export default function Blog({ darkMode }) {
             experience: "During our visit to the Bangko Sentral ng Pilipinas, we learned about how the country's currency is produced and how the economy is managed. Unfortunately, taking pictures inside the facility was not allowed, so I was unable to capture any photos during our visit. Afterward, we went to Hytec Power Inc., where we explored various technologies and equipment related to train management and operations in Manila. It was a very informative and exciting experience that helped us see how both finance and technology play vital roles in the country’s progress."
           }}
         >
-          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="500">
+          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="600">
             <div className="projectPictureContainer">
               <img className="projectPicture1" src={Day3} alt="Day 1" />
             </div>
 
             <div className="projectNameContainer">
-              <p className={`textStyle1 ${darkMode ? "dark" : "light"}`}>Day 3</p>
+              <p className={`textStyle1 ${darkMode ? "dark" : "light"}`}>Day 4</p>
             </div>
 
             <div className={`projectDescriptionContainer ${darkMode ? "dark" : "light"}`}>
@@ -210,13 +261,13 @@ export default function Blog({ darkMode }) {
             experience: "During our visit to the LRT, we learned about the operations behind Manila’s railway system and saw how trains are managed and maintained to serve thousands of commuters daily. It was fascinating to understand the coordination required to keep the system running smoothly. At the MMDA, we were given insights into how traffic is monitored and managed across the city. We also saw how technology and strategic planning come together to ensure public safety and efficient transportation flow. The experience gave us a deeper appreciation for the people working behind the scenes to make travel safer and more organized."
           }}
         >
-          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="600">
+          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="700">
             <div className="projectPictureContainer">
               <img className="projectPicture1" src={Day4} alt="Day 1" />
             </div>
 
             <div className="projectNameContainer">
-              <p className={`textStyle1 ${darkMode ? "dark" : "light"}`}>Day 4</p>
+              <p className={`textStyle1 ${darkMode ? "dark" : "light"}`}>Day 5</p>
             </div>
 
             <div className={`projectDescriptionContainer ${darkMode ? "dark" : "light"}`}>
@@ -242,27 +293,60 @@ export default function Blog({ darkMode }) {
                          Day5Pic6, 
                          Day5Pic7], // Add more images if you have
             dayTitle: "Day 5",
-            agenda: "We traveled to Baguio and visited The Mansion House, the Philippine Military Academy (PMA), the Strawberry Farm, and the Bell Church.",
+            agenda: "We visited Baguio and explored The Mansion, PMA, Strawberry Farm, and Bell Church.",
             date: "April 12, 2025",
             introduction: "Our journey to Baguio was filled with excitement as we visited some of the city's most well-known attractions. Known as the Summer Capital of the Philippines, Baguio welcomed us with its cool breeze, scenic views, and peaceful atmosphere.",
             experience: "During our trip, we explored The Mansion House, admired its grand architecture, and enjoyed the calm surroundings. We also visited the Philippine Military Academy (PMA), where we saw the impressive grounds and learned about the country's future military leaders. At the Strawberry Farm, we appreciated the vast fields and the fresh air, even though we didn’t try strawberry picking. Lastly, we visited the Bell Church, where the intricate designs and serene environment gave us a glimpse of Baguio’s cultural richness. It was a wonderful experience filled with sightseeing and meaningful memories."
           }}
         >
-          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="700">
+          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="800">
             <div className="projectPictureContainer">
               <img className="projectPicture1" src={Day5} alt="Day 1" />
             </div>
 
             <div className="projectNameContainer">
-              <p className={`textStyle1 ${darkMode ? "dark" : "light"}`}>Day 5</p>
+              <p className={`textStyle1 ${darkMode ? "dark" : "light"}`}>Day 6</p>
             </div>
 
             <div className={`projectDescriptionContainer ${darkMode ? "dark" : "light"}`}>
-              <p className={`textStyle ${darkMode ? "dark" : "light"}`}>We traveled to Baguio and visited The Mansion House, the Philippine Military Academy (PMA), the Strawberry Farm, and the Bell Church.</p>
+              <p className={`textStyle ${darkMode ? "dark" : "light"}`}>We visited Baguio and explored The Mansion, PMA, Strawberry Farm, and Bell Church.</p>
             </div>
 
             <div className="dateContainer1">
             <p className={`textStyle ${darkMode ? "dark" : "light"}`}>April <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>12, 2025</span></p>
+            </div>
+          </div>
+        </Link>
+
+        <Link
+          to="/blogModal"
+          state={{
+            blogImageMain: Day7,
+            blogImages: [Day7Pic1, 
+                         Day7Pic3, 
+                         Day7Pic2], // Add more images if you have
+            dayTitle: "Day 7",
+            agenda: "We went to Burnham Park before heading back to the dorm.",
+            date: "April 13, 2025",
+            introduction: "During our stay in Baguio, we made sure to visit Burnham Park, one of the city's most well-known and historic public parks. Known for its wide open spaces, beautiful gardens, and recreational areas, Burnham Park serves as a relaxing escape in the heart of Baguio. It was the perfect destination for unwinding after a day of exploring the city’s landmarks.",
+            experience: "Our visit to Burnham Park was refreshing and enjoyable. We walked around the park, admired the scenic lake, and appreciated the peaceful atmosphere filled with fresh mountain air. Some of us rented bikes while others simply sat and relaxed under the trees. It was a calm and soothing moment that gave us time to reflect on the day’s experiences. As the sun began to set, we made our way back to the dorm, feeling relaxed and grateful for the opportunity to enjoy such a serene place in Baguio."
+          }}
+        >
+          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="900">
+            <div className="projectPictureContainer">
+              <img className="projectPicture1" src={Day7} alt="Day 1" />
+            </div>
+
+            <div className="projectNameContainer">
+              <p className={`textStyle1 ${darkMode ? "dark" : "light"}`}>Day 7</p>
+            </div>
+
+            <div className={`projectDescriptionContainer ${darkMode ? "dark" : "light"}`}>
+              <p className={`textStyle ${darkMode ? "dark" : "light"}`}>We went to Burnham Park before heading back to the dorm.</p>
+            </div>
+
+            <div className="dateContainer1">
+            <p className={`textStyle ${darkMode ? "dark" : "light"}`}>April <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>13, 2025</span></p>
             </div>
           </div>
         </Link>

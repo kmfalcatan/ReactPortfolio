@@ -5,6 +5,7 @@ import GitHub from "../assets/logo-github.svg"
 import WmsuCourse from "../assets/WmsuCourse.jpg"
 import TodoList from "../assets/todoList.jpg"
 import Pokemon from "../assets/pokemon.jpg"
+import MedEquipTracker from "../assets/medEquipTracker.jpg"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -111,7 +112,6 @@ export default function Project({ darkMode }) {
           </div>
         </a>
 
-        <a href="https://km0912412.pythonanywhere.com/" target="_blank">
           <div className={`subProject ${darkMode ? "dark" : "light"}`} data-aos="fade-up"  data-aos-delay="500">
             <div className="projectPictureContainer">
               <img className="projectPicture" src={Pokemon} alt="" />
@@ -130,16 +130,35 @@ export default function Project({ darkMode }) {
             </div>
 
             <div className="viewButtonContainer">
-              <a href="https://km0912412.pythonanywhere.com/" target="_blank">
-                <img className={`icon ${darkMode ? "dark" : "light"}`} src={Eye} alt="" /> 
-              </a>
-              
               <a href="https://github.com/kmfalcatan/PokemonGame.git" target="_blank">
                 <img className={`icon ${darkMode ? "dark" : "light"}`} src={GitHub} alt="" />
               </a>
             </div>
           </div>
-        </a>
+
+          <div className={`subProject ${darkMode ? "dark" : "light"}`} data-aos="fade-up"  data-aos-delay="600">
+            <div className="projectPictureContainer">
+              <img className="projectPicture" src={MedEquipTracker} alt="" />
+            </div>
+
+            <div className="projectNameContainer">
+              <p className={`textStyle ${darkMode ? "dark" : "light"}`}>MedEquip Tracker</p>
+            </div>
+
+            <div className={`projectDescriptionContainer ${darkMode ? "dark" : "light"}`}>
+              <p className={`textStyle ${darkMode ? "dark" : "light"}`}>Medequip Tracker is an inventory system designed to manage and monitor medical equipment efficiently.</p>
+            </div>
+
+            <div className="dateContainer">
+            <p className={`textStyle ${darkMode ? "dark" : "light"}`}>January <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>2024</span> - May <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>2024</span></p>
+            </div>
+
+            <div className="viewButtonContainer">
+              <a href="https://github.com/kmfalcatan/WebCraft.git" target="_blank">
+                <img className={`icon ${darkMode ? "dark" : "light"}`} src={GitHub} alt="" />
+              </a>
+            </div>
+          </div>
       </div>
     </div>
   );
