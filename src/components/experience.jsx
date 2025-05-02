@@ -127,7 +127,7 @@ function Experience({ darkMode }){
             <p className={`text2 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up">Experience</p>
           </div>
 
-          <div className="subEducationContainer" data-aos="fade-up"  data-aos-delay="300">
+          <div className="subEducationContainer" data-aos="fade-up"  data-aos-delay="700">
             <div className="lineContainer">
               <div className={`line3 ${darkMode ? "dark" : "light"}`}>
 
@@ -153,7 +153,7 @@ function Experience({ darkMode }){
             </div>
           </div>
 
-          <div className="subEducationContainer" data-aos="fade-up"  data-aos-delay="400">
+          <div className="subEducationContainer" data-aos="fade-up"  data-aos-delay="800">
             <div className="lineContainer">
               <div className={`line3 ${darkMode ? "dark" : "light"}`}>
 
