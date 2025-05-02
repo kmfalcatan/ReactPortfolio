@@ -60,7 +60,7 @@ function BlogModal() {
         <img className="blogImage" src={blogImageMain} alt="Main Blog" />
       </div>
 
-      <div className="dayContainer">
+      <div className="dayContainer" data-aos="fade-up"  data-aos-delay="300">
         <div className={`subDayContainer ${darkMode ? "dark" : "light"}`}>
           <p className={`dayText ${darkMode ? "dark" : "light"}`}>{dayTitle}</p>
           <p className={`agenda ${darkMode ? "dark" : "light"}`}>{agenda}</p>
@@ -69,12 +69,12 @@ function BlogModal() {
       </div>
 
       <div className="paragraphContainer">
-        <div className="introductionContainer">
+        <div className="introductionContainer" data-aos="fade-up"  data-aos-delay="500">
           <p className={`intro ${darkMode ? "dark" : "light"}`}>Introduction</p>
           <p className={`fontStyle ${darkMode ? "dark" : "light"}`}>{introduction}</p>
         </div>
 
-        <div className="blogImageContainer1">
+        <div className="blogImageContainer1" data-aos="fade-up"  data-aos-delay="700">
           <div className={`subBlogImgContainer ${darkMode ? "dark" : "light"}`}>
             <img
               key={currentBlogIndex}
@@ -95,7 +95,7 @@ function BlogModal() {
           </div>
         </div>
 
-        <div className="expirienceContainer">
+        <div className="expirienceContainer" data-aos="fade"  data-aos-delay="900">
           <p className={`experience ${darkMode ? "dark" : "light"}`}>{experience}</p>
         </div>
       </div>

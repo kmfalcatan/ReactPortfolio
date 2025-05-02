@@ -1,6 +1,8 @@
 import "../style/aboutPage.css";
 import { useState, useEffect, useRef } from "react";
 import Person from "../assets/pictureOfMe.svg"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function About({ darkMode }) {
   const sectionRef = useRef(null);
@@ -13,6 +15,9 @@ export default function About({ darkMode }) {
     }
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false });
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -37,11 +42,11 @@ export default function About({ darkMode }) {
     <div ref={sectionRef} className={`subHomeContainer1 ${isVisible ? "visible" : "hidden"}`}>
       <div className="subAboutContainer">
         <div className="aboutMeContainer">
-          <div className="subAboutMeContainer">
+          <div className="subAboutMeContainer" data-aos="fade-up">
             <img className="person" src={Person} alt="" />
           </div>
 
-          <div className="textContainer3">
+          <div className="textContainer3" data-aos="fade-up"  data-aos-delay="300">
             <div className={`titleContainer ${darkMode ? "dark" : "light"}`}>
               <p className={`textStyle ${darkMode ? "dark" : "light"}`}>About me</p>
             </div>

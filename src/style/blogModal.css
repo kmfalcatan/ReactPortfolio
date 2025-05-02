@@ -78,8 +78,8 @@ body{
 
 .dayContainer{
   position: absolute;
-  top: 19rem;
-  height: 10rem;
+  top: 17rem;
+  height: 12rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -229,8 +229,8 @@ body{
 
 .subBlogImgContainer{
   border-radius: 1rem;
-  width: 90%;
-  max-height: 20rem;
+  width: 18rem;
+  height: 13.5rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -297,6 +297,15 @@ body{
     width: 100%;
     height: auto;
   }
+
+  .dayContainer{
+    height: 10rem;
+  }
+
+  .subBlogImgContainer{
+    width: 26.5rem;
+    height: 20rem;
+  }
 }
 
   /*laptop*/
@@ -321,6 +330,7 @@ body{
 
   .dayContainer{
     top: 25rem;
+    height: 10rem;
   }
 
   .blogImageContainer{
@@ -333,5 +343,6 @@ body{
 
   .subBlogImgContainer{
     width: 26rem;
+    height: 19.5rem;
   }
 }

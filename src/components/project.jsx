@@ -45,14 +45,14 @@ export default function Project({ darkMode }) {
 
   return(
     <div ref={sectionRef} className="subProjectContainer" data-aos="fade">
-      <div className="titleContainer2">
+      <div className="titleContainer2" data-aos="fade-up">
         <p className={`text2 ${darkMode ? "dark" : "light"}`}>Projects</p>
         <p className={`text3 ${darkMode ? "dark" : "light"}`}>This project is a college-based web application I developed to showcase my front-end development skills using modern technologies.</p>
       </div>
 
       <div className="project">
         <a href="https://km0912412.pythonanywhere.com/" target="_blank">
-          <div className={`subProject ${darkMode ? "dark" : "light"}`}>
+          <div className={`subProject ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="300">
             <div className="projectPictureContainer">
               <img className="projectPicture" src={WmsuCourse} alt="" />
             </div>
@@ -82,7 +82,7 @@ export default function Project({ darkMode }) {
         </a>
 
         <a href="https://falcatantodolist.netlify.app/" target="_blank">
-          <div className={`subProject ${darkMode ? "dark" : "light"}`}>
+          <div className={`subProject ${darkMode ? "dark" : "light"}`} data-aos="fade-up"  data-aos-delay="400">
             <div className="projectPictureContainer">
               <img className="projectPicture" src={TodoList} alt="" />
             </div>
@@ -112,7 +112,7 @@ export default function Project({ darkMode }) {
         </a>
 
         <a href="https://km0912412.pythonanywhere.com/" target="_blank">
-          <div className={`subProject ${darkMode ? "dark" : "light"}`}>
+          <div className={`subProject ${darkMode ? "dark" : "light"}`} data-aos="fade-up"  data-aos-delay="500">
             <div className="projectPictureContainer">
               <img className="projectPicture" src={Pokemon} alt="" />
             </div>

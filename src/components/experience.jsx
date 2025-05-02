@@ -14,10 +14,10 @@ function Experience({ darkMode }){
       <div className="titleContainer3">
         <div className="educationContainer">
           <div className="education5">
-            <p className={`text2 ${darkMode ? "dark" : "light"}`}>Education</p>
+            <p className={`text2 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up">Education</p>
           </div>
 
-          <div className="subEducationContainer">
+          <div className="subEducationContainer" data-aos="fade-up"  data-aos-delay="300">
             <div className="lineContainer">
               <div className={`line3 ${darkMode ? "dark" : "light"}`}>
 
@@ -43,7 +43,7 @@ function Experience({ darkMode }){
             </div>
           </div>
           
-          <div className="subEducationContainer">
+          <div className="subEducationContainer" data-aos="fade-up"  data-aos-delay="400">
             <div className="lineContainer">
               <div className={`line3 ${darkMode ? "dark" : "light"}`}>
 
@@ -69,7 +69,7 @@ function Experience({ darkMode }){
             </div>
           </div>
 
-          <div className="subEducationContainer">
+          <div className="subEducationContainer" data-aos="fade-up"  data-aos-delay="500">
             <div className="lineContainer">
               <div className={`line3 ${darkMode ? "dark" : "light"}`}>
 
@@ -95,7 +95,7 @@ function Experience({ darkMode }){
             </div>
           </div>
 
-          <div className="subEducationContainer">
+          <div className="subEducationContainer" data-aos="fade-up"  data-aos-delay="600">
             <div className="lineContainer">
               <div className={`line3 ${darkMode ? "dark" : "light"}`}>
 
@@ -124,10 +124,10 @@ function Experience({ darkMode }){
 
         <div className="educationContainer">
           <div className="education5">
-            <p className={`text2 ${darkMode ? "dark" : "light"}`}>Experience</p>
+            <p className={`text2 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up">Experience</p>
           </div>
 
-          <div className="subEducationContainer">
+          <div className="subEducationContainer" data-aos="fade-up"  data-aos-delay="300">
             <div className="lineContainer">
               <div className={`line3 ${darkMode ? "dark" : "light"}`}>
 
@@ -153,7 +153,7 @@ function Experience({ darkMode }){
             </div>
           </div>
 
-          <div className="subEducationContainer">
+          <div className="subEducationContainer" data-aos="fade-up"  data-aos-delay="400">
             <div className="lineContainer">
               <div className={`line3 ${darkMode ? "dark" : "light"}`}>
 
