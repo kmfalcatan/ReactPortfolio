@@ -67,11 +67,19 @@
   background-color: #FFE0B2;
 }
 
-.subProject:hover{
+.dark.subProject:hover{
   transform: scale(1.05);
 }
 
-.subProject:active{
+.dark.subProject:active{
+  transform: scale(1);
+}
+
+.light.subProject:hover{
+  transform: scale(1.05);
+}
+
+.light.subProject:active{
   transform: scale(1);
 }
 

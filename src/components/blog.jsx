@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../style/blog.css";
 import { useState, useEffect, useRef } from "react";
+import Eye from "../assets/eye.svg"
 import Day1 from "../assets/day1.jpg";
 import Day2 from "../assets/day2.jpg";
 import Day3 from "../assets/day3.jpg";
@@ -125,6 +126,12 @@ export default function Blog({ darkMode }) {
             <div className="dateContainer1">
             <p className={`textStyle ${darkMode ? "dark" : "light"}`}>April <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>07, 2025</span></p>
             </div>
+            
+            <div className="viewButtonContainer">
+              <a href="https://falcatantodolist.netlify.app/" target="_blank">
+                <img className={`icon ${darkMode ? "dark" : "light"}`} src={Eye} alt="" /> 
+              </a>
+            </div>
           </div>
         </Link>
 
@@ -162,6 +169,12 @@ export default function Blog({ darkMode }) {
 
             <div className="dateContainer1">
             <p className={`textStyle ${darkMode ? "dark" : "light"}`}>April <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>08, 2025</span></p>
+            </div>
+            
+            <div className="viewButtonContainer">
+              <a href="https://falcatantodolist.netlify.app/" target="_blank">
+                <img className={`icon ${darkMode ? "dark" : "light"}`} src={Eye} alt="" /> 
+              </a>
             </div>
           </div>
         </Link>
@@ -201,6 +214,12 @@ export default function Blog({ darkMode }) {
             <div className="dateContainer1">
             <p className={`textStyle ${darkMode ? "dark" : "light"}`}>April <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>09, 2025</span></p>
             </div>
+            
+            <div className="viewButtonContainer">
+              <a href="https://falcatantodolist.netlify.app/" target="_blank">
+                <img className={`icon ${darkMode ? "dark" : "light"}`} src={Eye} alt="" /> 
+              </a>
+            </div>
           </div>
         </Link>
 
@@ -238,6 +257,12 @@ export default function Blog({ darkMode }) {
 
             <div className="dateContainer1">
             <p className={`textStyle ${darkMode ? "dark" : "light"}`}>April <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>10, 2025</span></p>
+            </div>
+            
+            <div className="viewButtonContainer">
+              <a href="https://falcatantodolist.netlify.app/" target="_blank">
+                <img className={`icon ${darkMode ? "dark" : "light"}`} src={Eye} alt="" /> 
+              </a>
             </div>
           </div>
         </Link>
@@ -277,6 +302,12 @@ export default function Blog({ darkMode }) {
             <div className="dateContainer1">
             <p className={`textStyle ${darkMode ? "dark" : "light"}`}>April <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>11, 2025</span></p>
             </div>
+            
+            <div className="viewButtonContainer">
+              <a href="https://falcatantodolist.netlify.app/" target="_blank">
+                <img className={`icon ${darkMode ? "dark" : "light"}`} src={Eye} alt="" /> 
+              </a>
+            </div>
           </div>
         </Link>
 
@@ -315,6 +346,12 @@ export default function Blog({ darkMode }) {
             <div className="dateContainer1">
             <p className={`textStyle ${darkMode ? "dark" : "light"}`}>April <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>12, 2025</span></p>
             </div>
+            
+            <div className="viewButtonContainer">
+              <a href="https://falcatantodolist.netlify.app/" target="_blank">
+                <img className={`icon ${darkMode ? "dark" : "light"}`} src={Eye} alt="" /> 
+              </a>
+            </div>
           </div>
         </Link>
 
@@ -347,6 +384,12 @@ export default function Blog({ darkMode }) {
 
             <div className="dateContainer1">
             <p className={`textStyle ${darkMode ? "dark" : "light"}`}>April <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>13, 2025</span></p>
+            </div>
+            
+            <div className="viewButtonContainer">
+              <a href="https://falcatantodolist.netlify.app/" target="_blank">
+                <img className={`icon ${darkMode ? "dark" : "light"}`} src={Eye} alt="" /> 
+              </a>
             </div>
           </div>
         </Link>

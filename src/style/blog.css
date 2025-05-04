@@ -22,7 +22,7 @@
   padding-left: 0.2rem;
   height: 1.5rem;
   position: absolute;
-  bottom: 0.2rem;
+  bottom: 1rem;
 }
 
 .subProjectContainer{
@@ -60,7 +60,7 @@
 
 .subProject1{
   position: relative;
-  height: 18.5rem;
+  height: 19.5rem;
   border-radius: 1rem;
   width: 17rem;
   transition: all 0.15s;
@@ -76,11 +76,19 @@
   background-color: #FFE0B2;
 }
 
-.subProject1:hover{
+.dark.subProject1:hover{
   transform: scale(1.05);
 }
 
-.subProject1:active{
+.dark.subProject1:active{
+  transform: scale(1);
+}
+
+.light.subProject1:hover{
+  transform: scale(1.05);
+}
+
+.light.subProject1:active{
   transform: scale(1);
 }
 
