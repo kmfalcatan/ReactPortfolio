@@ -6,6 +6,7 @@ import WmsuCourse from "../assets/WmsuCourse.jpg"
 import TodoList from "../assets/todoList.jpg"
 import Pokemon from "../assets/pokemon.jpg"
 import MedEquipTracker from "../assets/medEquipTracker.jpg"
+import Blog from "../assets/blog.jpg"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -106,6 +107,36 @@ export default function Project({ darkMode }) {
               </a>
               
               <a href="https://github.com/kmfalcatan/ToDoList.git" target="_blank">
+                <img className={`icon ${darkMode ? "dark" : "light"}`} src={GitHub} alt="" />
+              </a>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://falcatanblogpost.netlify.app/" target="_blank">
+          <div className={`subProject ${darkMode ? "dark" : "light"}`} data-aos="fade-up"  data-aos-delay="400">
+            <div className="projectPictureContainer">
+              <img className="projectPicture" src={Blog} alt="" />
+            </div>
+
+            <div className="projectNameContainer">
+              <p className={`textStyle ${darkMode ? "dark" : "light"}`}>Blog</p>
+            </div>
+
+            <div className={`projectDescriptionContainer ${darkMode ? "dark" : "light"}`}>
+              <p className={`textStyle ${darkMode ? "dark" : "light"}`}>I created a blog post documenting our educational tour, highlighting each day's memorable experiences and insights.</p>
+            </div>
+
+            <div className="dateContainer">
+            <p className={`textStyle ${darkMode ? "dark" : "light"}`}>May <span className={`textStyle4 ${darkMode ? "dark" : "light"}`}>04, 2025</span></p>
+            </div>
+
+            <div className="viewButtonContainer">
+              <a href="https://falcatanblogpost.netlify.app/" target="_blank">
+                <img className={`icon ${darkMode ? "dark" : "light"}`} src={Eye} alt="" /> 
+              </a>
+              
+              <a href="https://github.com/kmfalcatan/Blog.git" target="_blank">
                 <img className={`icon ${darkMode ? "dark" : "light"}`} src={GitHub} alt="" />
               </a>
             </div>
