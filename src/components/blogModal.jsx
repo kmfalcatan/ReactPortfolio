@@ -95,7 +95,7 @@ function BlogModal() {
           </div>
         </div>
 
-        <div className="expirienceContainer" data-aos="fade"  data-aos-delay="900">
+        <div className="expirienceContainer" data-aos="fade"  data-aos-delay="700">
           <p className={`experience ${darkMode ? "dark" : "light"}`}>{experience}</p>
         </div>
       </div>
