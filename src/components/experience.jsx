@@ -181,6 +181,35 @@ function Experience({ darkMode }){
               </div>
             </div>
           </div>
+
+          <div className="subEducationContainer" data-aos="fade-up"  data-aos-delay="900">
+            <div className="lineContainer">
+              <div className={`line3 ${darkMode ? "dark" : "light"}`}>
+
+              </div>
+            </div>
+
+            <div className={`schoolContainer ${darkMode ? "dark" : "light"}`}>
+              <div className={`yearContainer ${darkMode ? "dark" : "light"}`}>
+                <p className="textStyle1">May 06,2025</p>
+              </div>
+
+              <div className={`school ${darkMode ? "dark" : "light"}`}>
+                <p>Legacy Front End</p>
+              </div>
+
+              <div className={`aboutSchool ${darkMode ? "dark" : "light"}`}>
+                <p>I earned the Legacy Front End certification from freeCodeCamp.</p>
+                <a className={`linkCert ${darkMode ? "dark" : "light"}`} href="https://www.freecodecamp.org/certification/km12/legacy-front-end" target="_blank">
+                 <u>See Certificate</u>
+                </a>
+              </div>
+
+              <div className={`circleContainer1 ${darkMode ? "dark" : "light"}`}>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

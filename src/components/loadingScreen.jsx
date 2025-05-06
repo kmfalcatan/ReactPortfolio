@@ -13,7 +13,7 @@ export default function Loading() {
     <div
       className="background"
       style={{
-        backgroundColor: darkMode ? "" : "#FFF8E1",
+        backgroundColor: darkMode ? "#0b0c10" : "#FFF8E1",
         fontFamily: darkMode ? "" : "Rubik, sans-serif",
       }}
     >
