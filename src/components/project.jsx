@@ -49,7 +49,6 @@ export default function Project({ darkMode }) {
     <div ref={sectionRef} className="subProjectContainer" data-aos="fade">
       <div className="titleContainer2" data-aos="fade-up">
         <p className={`text2 ${darkMode ? "dark" : "light"}`}>Projects</p>
-        <p className={`text3 ${darkMode ? "dark" : "light"}`}>This project is a college-based web application I developed to showcase my front-end development skills using modern technologies.</p>
       </div>
 
       <div className="project">
@@ -84,7 +83,7 @@ export default function Project({ darkMode }) {
         </a>
 
         <a href="https://falcatantodolist.netlify.app/" target="_blank">
-          <div className={`subProject ${darkMode ? "dark" : "light"}`} data-aos="fade-up"  data-aos-delay="400">
+          <div className={`subProject ${darkMode ? "dark" : "light"}`} data-aos="fade-up"  data-aos-delay="300">
             <div className="projectPictureContainer">
               <img className="projectPicture" src={TodoList} alt="" />
             </div>
@@ -114,7 +113,7 @@ export default function Project({ darkMode }) {
         </a>
 
         <a href="https://falcatanblogpost.netlify.app/" target="_blank">
-          <div className={`subProject ${darkMode ? "dark" : "light"}`} data-aos="fade-up"  data-aos-delay="400">
+          <div className={`subProject ${darkMode ? "dark" : "light"}`} data-aos="fade-up"  data-aos-delay="300">
             <div className="projectPictureContainer">
               <img className="projectPicture" src={Blog} alt="" />
             </div>
@@ -143,7 +142,7 @@ export default function Project({ darkMode }) {
           </div>
         </a>
 
-          <div className={`subProject ${darkMode ? "dark" : "light"}`} data-aos="fade-up"  data-aos-delay="500">
+          <div className={`subProject ${darkMode ? "dark" : "light"}`} data-aos="fade-up"  data-aos-delay="300">
             <div className="projectPictureContainer">
               <img className="projectPicture" src={Pokemon} alt="" />
             </div>
@@ -167,7 +166,7 @@ export default function Project({ darkMode }) {
             </div>
           </div>
 
-          <div className={`subProject ${darkMode ? "dark" : "light"}`} data-aos="fade-up"  data-aos-delay="600">
+          <div className={`subProject ${darkMode ? "dark" : "light"}`} data-aos="fade-up"  data-aos-delay="300">
             <div className="projectPictureContainer">
               <img className="projectPicture" src={MedEquipTracker} alt="" />
             </div>

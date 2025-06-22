@@ -46,7 +46,6 @@ export default function Contact({ darkMode }) {
     <div ref={sectionRef} className="subContactContainer" data-aos="fade">
       <div className="titleContainer2" data-aos="fade-up">
         <p className={`text2 ${darkMode ? "dark" : "light"}`}>Contact Me Anythime!</p>
-        <p className={`text3 ${darkMode ? "dark" : "light"}`}>Feel free to reach out for collaborations, inquiries, or just to say hello!</p>
       </div>
 
       <div className="contact">
@@ -72,7 +71,7 @@ export default function Contact({ darkMode }) {
           </div>
         </div>
 
-        <div className={`subContact ${darkMode ? "dark" : "light"}`} data-aos="fade"  data-aos-delay="500">
+        <div className={`subContact ${darkMode ? "dark" : "light"}`} data-aos="fade"  data-aos-delay="300">
           <div className="socialIconContainer">
             <div className={`subSocialIconContainer ${darkMode ? "dark" : "light"}`}>
               <img className="social" src={Email} alt="" />
@@ -92,7 +91,7 @@ export default function Contact({ darkMode }) {
           </div>
         </div>
 
-        <div className={`subContact ${darkMode ? "dark" : "light"}`} data-aos="fade"  data-aos-delay="700">
+        <div className={`subContact ${darkMode ? "dark" : "light"}`} data-aos="fade"  data-aos-delay="300">
           <div className="socialIconContainer">
             <div className={`subSocialIconContainer ${darkMode ? "dark" : "light"}`}>
               <img className="social" src={Message} alt="" />

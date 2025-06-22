@@ -54,9 +54,9 @@
 }
 
 .subLogoContainer {
-  height: 12rem;
-  width: 8rem;
-  border-radius: 10rem;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,8 +407,8 @@
 
 @media only screen and (max-width: 601px){
   .subLogoContainer{
-    height: 6rem;
-    width: 3.5rem;
+    height: 4rem;
+    width: 4rem;
   }
 
   .textContainer4{
@@ -450,37 +450,3 @@
   }
 }
 
-/*pc*/
-@media only screen and (min-width: 1441px) {
-  .percentContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
-  }
-
-  .subToolContainer1{
-    gap: 0.5rem;
-  }
-
-  .devContainer1{
-    gap: 0.5rem;
-  }
-
-  .titleContainer2 {
-    grid-template-columns: repeat(2, 35rem);
-    justify-content: space-between;
-    align-items: start;
-  }
-
-  .text3 {
-    text-align: right;
-    margin-right: 2rem;
-    font-size: 1.5rem;
-  }
-
-  .text2 {
-    text-align: left;
-    margin-left: 2rem;
-    font-size: 2.5rem;
-  }
-}

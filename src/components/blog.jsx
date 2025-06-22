@@ -94,7 +94,6 @@ export default function Blog({ darkMode }) {
     <div ref={sectionRef} className="subProjectContainer" data-aos="fade">
       <div className="titleContainer2" data-aos="fade-up">
         <p className={`text2 ${darkMode ? "dark" : "light"}`}>Blog Post</p>
-        <p className={`text3 ${darkMode ? "dark" : "light"}`}>Our educational tour gave us a deeper understanding of important institutions, history, and technology, making it a truly memorable and insightful experience.</p>
       </div>
 
       <div className="project">
@@ -102,7 +101,7 @@ export default function Blog({ darkMode }) {
           to="/blogModal"
           state={{
             blogImageMain: Day1,
-            blogImages: [Day1Pic1, Day1Pic8, Day1Pic2, Day1Pic3, Day1Pic4, Day1Pic5, Day1Pic6, Day1Pic7], // Add more images if you have
+            blogImages: [Day1Pic1, Day1Pic8, Day1Pic2, Day1Pic3, Day1Pic4, Day1Pic5, Day1Pic6, Day1Pic7], 
             dayTitle: "Day 1",
             agenda: "We visited Luneta Park, admired the Rizal Fountain, and explored the city on a tour.",
             date: "April 07, 2025",
@@ -154,7 +153,7 @@ export default function Blog({ darkMode }) {
             experience: "At the Port of Subic Bay, we witnessed the bustling activities of one of the country’s most vital ports, known for its strategic location and modern infrastructure. It was fascinating to learn about the operations that keep the port running smoothly. Later, we visited the Subic Bay Exhibition and Convention Center, where we saw the venue’s impressive facilities designed to host international events. It was exciting to be in a place that not only caters to business and trade but also showcases the region's capacity to host large-scale conventions and exhibitions. This visit gave us a deeper appreciation of Subic Bay’s role in both the local and global economy."
           }}
         >
-          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="400">
+          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="300">
             <div className="projectPictureContainer">
               <img className="projectPicture1" src={Day2} alt="Day 1" />
             </div>
@@ -198,7 +197,7 @@ export default function Blog({ darkMode }) {
             experience: "At the Quezon Memorial Circle, we explored the monument dedicated to President Manuel L. Quezon and enjoyed the peaceful atmosphere of the surrounding park. Later, at the National Museum of Natural History, we were amazed by the diverse exhibits showcasing the country’s rich biodiversity, from preserved wildlife to fascinating geological displays. The trip was both educational and enjoyable, leaving us with a deeper appreciation of the Philippines' natural and historical treasures."
           }}
         >
-          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="500">
+          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="300">
             <div className="projectPictureContainer">
               <img className="projectPicture1" src={Day6} alt="Day 1" />
             </div>
@@ -242,7 +241,7 @@ export default function Blog({ darkMode }) {
             experience: "During our visit to the Bangko Sentral ng Pilipinas, we learned about how the country's currency is produced and how the economy is managed. Unfortunately, taking pictures inside the facility was not allowed, so I was unable to capture any photos during our visit. Afterward, we went to Hytec Power Inc., where we explored various technologies and equipment related to train management and operations in Manila. It was a very informative and exciting experience that helped us see how both finance and technology play vital roles in the country’s progress."
           }}
         >
-          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="600">
+          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="300">
             <div className="projectPictureContainer">
               <img className="projectPicture1" src={Day3} alt="Day 1" />
             </div>
@@ -286,7 +285,7 @@ export default function Blog({ darkMode }) {
             experience: "During our visit to the LRT, we learned about the operations behind Manila’s railway system and saw how trains are managed and maintained to serve thousands of commuters daily. It was fascinating to understand the coordination required to keep the system running smoothly. At the MMDA, we were given insights into how traffic is monitored and managed across the city. We also saw how technology and strategic planning come together to ensure public safety and efficient transportation flow. The experience gave us a deeper appreciation for the people working behind the scenes to make travel safer and more organized."
           }}
         >
-          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="700">
+          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="300">
             <div className="projectPictureContainer">
               <img className="projectPicture1" src={Day4} alt="Day 1" />
             </div>
@@ -330,7 +329,7 @@ export default function Blog({ darkMode }) {
             experience: "During our trip, we explored The Mansion House, admired its grand architecture, and enjoyed the calm surroundings. We also visited the Philippine Military Academy (PMA), where we saw the impressive grounds and learned about the country's future military leaders. At the Strawberry Farm, we appreciated the vast fields and the fresh air, even though we didn’t try strawberry picking. Lastly, we visited the Bell Church, where the intricate designs and serene environment gave us a glimpse of Baguio’s cultural richness. It was a wonderful experience filled with sightseeing and meaningful memories."
           }}
         >
-          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="800">
+          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="300">
             <div className="projectPictureContainer">
               <img className="projectPicture1" src={Day5} alt="Day 1" />
             </div>
@@ -369,7 +368,7 @@ export default function Blog({ darkMode }) {
             experience: "Our visit to Burnham Park was refreshing and enjoyable. We walked around the park, admired the scenic lake, and appreciated the peaceful atmosphere filled with fresh mountain air. Some of us rented bikes while others simply sat and relaxed under the trees. It was a calm and soothing moment that gave us time to reflect on the day’s experiences. As the sun began to set, we made our way back to the dorm, feeling relaxed and grateful for the opportunity to enjoy such a serene place in Baguio."
           }}
         >
-          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="900">
+          <div className={`subProject1 ${darkMode ? "dark" : "light"}`}  data-aos="fade-up"  data-aos-delay="300">
             <div className="projectPictureContainer">
               <img className="projectPicture1" src={Day7} alt="Day 1" />
             </div>

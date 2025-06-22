@@ -28,7 +28,7 @@ export default function Header({ darkMode, setDarkMode }) {
   return (
     <div className={`headerContainer ${darkMode ? "dark" : "light"}`}>
       <div className="subHeaderContainer1">
-        {["home", "about", "skill", "project", "blog", "experience", "contact"].map((id) => (
+        {["home", "about", "skill", "project", "experience", "contact"].map((id) => (
           <button
             key={id}
             onClick={() => scrollToSection(id)}
@@ -70,7 +70,7 @@ export default function Header({ darkMode, setDarkMode }) {
                   justifyContent: "left",
                 }}
               >
-                {["home", "about", "skill", "project", "blog", "experience", "contact"].map((id) => (
+                {["home", "about", "skill", "project", "experience", "contact"].map((id) => (
                   <motion.button
                     key={id}
                     onClick={() => scrollToSection(id)}
