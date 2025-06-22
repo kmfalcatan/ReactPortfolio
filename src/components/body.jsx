@@ -34,9 +34,9 @@ export default function Body() {
       <div id="project" className="projectContainer">
         <Project darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>
-      <div id="blog" className="blogContainer">
+      {/* <div id="blog" className="blogContainer">
         <Blog darkMode={darkMode} setDarkMode={setDarkMode} />
-      </div>
+      </div> */}
       <div id="experience" className="experienceContainer">
         <Experience darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>

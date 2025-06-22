@@ -52,8 +52,8 @@ export default function Background({ darkMode }) {
             }}
           ></div>
         ))}
-
-      {/* Shooting stars only in dark mode */}
+{
+      /*Shooting stars only in dark mode
       {darkMode &&
         Array.from({ length: 20 }).map((_, index) => (
           <div
@@ -67,9 +67,9 @@ export default function Background({ darkMode }) {
           >
             <div className="star1" />
           </div>
-        ))}
+        ))} */}
 
-      {/* Rocket only in dark mode */}
+      {/* Rocket only in dark mode
       {darkMode &&
         Array.from({ length: 4 }).map((_, index) => (
           <div
@@ -83,9 +83,9 @@ export default function Background({ darkMode }) {
           >
             <img className="rocket" src={Rocket} alt="Rocket" />
           </div>
-        ))}
+        ))} */}
 
-      {/* Floating clouds only in light mode */}
+      {/* Floating clouds only in light mode
       {!darkMode &&
         clouds.map((cloud) => (
           <div
@@ -98,7 +98,7 @@ export default function Background({ darkMode }) {
           >
             <img className="cloud-image" src={Clouds} alt="Cloud" />
           </div>
-        ))}
+        ))} */}
     </div>
   );
 }

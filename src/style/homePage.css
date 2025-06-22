@@ -220,31 +220,3 @@ span.light {
     height: 25rem;
   }
 }
-
-/*pc*/
-@media only screen and (min-width: 1441px){
-  .subTextContainer{
-    font-size: 9rem;
-  }
-
-  .textColor1, .textColor2, .textColor3{
-    height: 9rem;
-  }
-
-  .moon{
-    height: 28rem;
-  }
-
-  .textContainer1{
-    height: 33rem;
-  }
-
-  .imageContainer{
-    top: 5rem;
-  }
-  
-  .text{
-    font-size: 3rem;
-    height: 7rem;
-  }
-}
